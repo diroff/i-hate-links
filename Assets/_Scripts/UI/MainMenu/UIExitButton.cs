@@ -11,6 +11,8 @@ namespace UI.MainMenu
 
         protected override async UniTask OnClickAsync(CancellationToken ct)
         {
+            await base.OnClickAsync(ct);
+
             SetInteractable(false);
 
             _sceneManager.QuitGame();

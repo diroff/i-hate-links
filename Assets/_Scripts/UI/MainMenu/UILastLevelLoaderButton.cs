@@ -15,6 +15,8 @@ namespace UI.MainMenu
 
         protected override async UniTask OnClickAsync(CancellationToken ct)
         {
+            await base.OnClickAsync(ct);
+
             SetInteractable(false);
             await _sceneManager.LoadSceneAsync(_levelName);
         }
