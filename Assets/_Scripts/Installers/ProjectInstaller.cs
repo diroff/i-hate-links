@@ -11,6 +11,7 @@ namespace Installers
         public void InstallBindings(ContainerBuilder builder)
         {
             builder.AddSingleton(new SceneManagerService(_menuSceneName));
+            builder.AddSingleton(new InputService());
         }
     }
 }
