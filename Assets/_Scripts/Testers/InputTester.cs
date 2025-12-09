@@ -1,3 +1,4 @@
+using Abstractions.Components;
 using Reflex.Attributes;
 using Services;
 using UnityEngine;
@@ -6,7 +7,16 @@ namespace Testers
 {
     public class InputTester : MonoBehaviour
     {
+        [SerializeField] private MovementPlane _plane;
+
         [Inject] private InputService _input;
+
+        private MovementComponent _movement;
+
+        private void Awake()
+        {
+            _movement = GetComponent<MovementComponent>();
+        }
 
         private void Start()
         {
@@ -15,8 +25,17 @@ namespace Testers
 
         private void Update()
         {
-            var move = _input.Move.ReadValue<Vector2>();
-            transform.Translate(new Vector3(move.x, move.y, 0f) * 5f * Time.deltaTime);
+            var input2D = _input.Move.ReadValue<Vector2>();
+
+            Vector3 direction = _plane switch
+            {
+                MovementPlane.XZ => new Vector3(input2D.x, 0f, input2D.y),
+                MovementPlane.XY => new Vector3(input2D.x, input2D.y, 0f),
+                MovementPlane.XZ_FlipY => new Vector3(input2D.x, 0f, input2D.y),
+                _ => new Vector3(input2D.x, 0f, input2D.y)
+            };
+
+            _movement?.Move(direction);
 
             if (_input.Jump.WasPressedThisFrame()) Debug.Log("Jump press");
             if (_input.Jump.IsPressed()) Debug.Log("Jump hold");
