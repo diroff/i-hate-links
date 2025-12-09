@@ -12,10 +12,12 @@ namespace Testers
         [Inject] private InputService _input;
 
         private MovementComponent _movement;
+        private InteractionComponent _interaction;
 
         private void Awake()
         {
             _movement = GetComponent<MovementComponent>();
+            _interaction = GetComponent<InteractionComponent>();
         }
 
         private void Start()
@@ -42,12 +44,14 @@ namespace Testers
             if (_input.Jump.WasReleasedThisFrame()) Debug.Log("Jump release");
 
             if (_input.Attack.WasPressedThisFrame()) StartAttack();
-            if (_input.Interact.WasPressedThisFrame()) Interact();
-            if(_input.Crouch.WasPressedThisFrame()) Crouch();
+
+            if (_input.Interact.WasPressedThisFrame())
+                _interaction?.Interact();
+
+            if (_input.Crouch.WasPressedThisFrame()) Crouch();
         }
 
         private void StartAttack() => Debug.Log("Attack");
-        private void Interact() => Debug.Log("Interact");
         private void Crouch() => Debug.Log("Crouch");
     }
 }
