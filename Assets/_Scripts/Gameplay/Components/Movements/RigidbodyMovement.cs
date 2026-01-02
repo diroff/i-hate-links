@@ -14,9 +14,9 @@ namespace Gameplay.Components.Movement
             Rigidbody = GetComponent<Rigidbody>();
         }
 
-        protected override void ApplyMovement(Vector3 velocity)
+        protected override void ApplyMovement(Vector3 direction, float deltaTime)
         {
-            Rigidbody.linearVelocity = velocity;
+
         }
     }
 }

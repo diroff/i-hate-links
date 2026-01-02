@@ -7,11 +7,15 @@ namespace Abstractions.Components
     {
         [Min(0)][SerializeField] protected float BaseSpeed;
         [Min(0)][SerializeField] protected float MaxSpeed;
+        [Min(0)][SerializeField] protected float RunAcceleration;
+        [Range(0f, 1f)][SerializeField] protected float GroundDecay;
 
         protected float CurrentSpeed;
         protected float SpeedBonus;
 
+        protected Vector3 DesiredDirection;
         protected Vector3 CurrentDirection;
+        protected bool IsMoving;
 
         public Action<Vector3> OnMoveStarted;
         public Action OnMoveStopped;
@@ -26,30 +30,71 @@ namespace Abstractions.Components
             SetSpeed(BaseSpeed);
         }
 
-        public void Move(Vector3 direction)
+        public void Move(Vector3 inputDirection)
         {
-            direction = direction.normalized;
+            inputDirection = inputDirection.normalized;
+            DesiredDirection = inputDirection;
 
-            if (direction.sqrMagnitude < 0.01f)
-            {
-                if (CurrentDirection.sqrMagnitude > 0.01f)
-                    OnMoveStopped?.Invoke();
+            bool hasInput = HasMovementInput(inputDirection);
 
-                CurrentDirection = Vector3.zero;
-                ApplyMovement(Vector3.zero);
+            if (HandleStartMove(hasInput, inputDirection)) 
                 return;
-            }
 
-            if (CurrentDirection != direction)
-                OnDirectionChanged?.Invoke(direction);
+            if (HandleStopMove(hasInput)) 
+                return;
 
-            CurrentDirection = direction;
-            OnMoveStarted?.Invoke(direction);
-
-            ApplyMovement(direction * CurrentSpeed);
+            HandleDirectionChange(hasInput, inputDirection);
         }
 
-        protected abstract void ApplyMovement(Vector3 velocity);
+        private bool HandleStartMove(bool hasInput, Vector3 inputDirection)
+        {
+            if (!IsMoving && hasInput)
+            {
+                IsMoving = true;
+                CurrentDirection = inputDirection;
+                OnMoveStarted?.Invoke(inputDirection);
+                return true;
+            }
+
+            return false;
+        }
+
+        private bool HandleStopMove(bool hasInput)
+        {
+            if (IsMoving && !hasInput)
+            {
+                IsMoving = false;
+                OnMoveStopped?.Invoke();
+                return true;
+            }
+
+            return false;
+        }
+
+        private void HandleDirectionChange(bool hasInput, Vector3 inputDirection)
+        {
+            if (CurrentDirection != inputDirection)
+            {
+                CurrentDirection = inputDirection;
+                OnDirectionChanged?.Invoke(inputDirection);
+            }
+        }
+
+        protected void ProcessMovement(float deltaTime)
+        {
+            if (IsMoving)
+                ApplyMovement(DesiredDirection, deltaTime);
+            else
+                ApplyHorizontalFriction(deltaTime);
+        }
+
+        protected abstract void ApplyMovement(Vector3 direction, float deltaTime);
+        protected virtual void ApplyHorizontalFriction(float deltaTime) { }
+
+        protected virtual bool HasMovementInput(Vector3 direction)
+        {
+            return direction.sqrMagnitude > 0.001f;
+        }
 
         public void SetSpeed(float speed)
         {
