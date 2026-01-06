@@ -2570,7 +2570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Gameplay.Components.Movement.Rigidbody2DMovement
   BaseSpeed: 9
   MaxSpeed: 9
-  RunAcceleration: 6
+  RunAcceleration: 14
   GroundDecay: 0.3
 --- !u!114 &2937720791122392332
 MonoBehaviour:
@@ -2666,9 +2666,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Gameplay.Components.Jump.Rigidbody2DJump
   _groundMask:
     serializedVersion: 2
-    m_Bits: 4294967295
-  _groundCheckOffset: {x: 0, y: -0.1}
-  _groundCheckSize: {x: 0.9, y: 0.2}
+    m_Bits: 8
+  _groundCheckOffset: {x: 0, y: -0.45}
+  _groundCheckSize: {x: 1, y: 0.1}
+  FallGravityMultiplier: 2
+  MaxFallSpeed: 20
+  JumpHeight: 4.5
+  JumpTimeToApex: 0.4
+  AdditionalJumps: 0
+  JumpCutGravity: 3.5
+  JumpHangGravityMultiplier: 1
+  JumpHangTimeThreshold: 0
+  CoyoteTime: 0.2
+  JumpInputBufferTime: 0.2
 --- !u!4 &8903795179247002197
 Transform:
   m_ObjectHideFlags: 0

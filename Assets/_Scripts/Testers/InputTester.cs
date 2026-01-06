@@ -13,11 +13,13 @@ namespace Testers
 
         private MovementComponent _movement;
         private InteractionComponent _interaction;
+        private JumpComponent _jump;
 
         private void Awake()
         {
             _movement = GetComponent<MovementComponent>();
             _interaction = GetComponent<InteractionComponent>();
+            _jump = GetComponent<JumpComponent>();
         }
 
         private void Start()
@@ -39,9 +41,12 @@ namespace Testers
 
             _movement?.Move(direction);
 
-            if (_input.Jump.WasPressedThisFrame()) Debug.Log("Jump press");
-            if (_input.Jump.IsPressed()) Debug.Log("Jump hold");
-            if (_input.Jump.WasReleasedThisFrame()) Debug.Log("Jump release");
+            if (_input.Jump.WasPressedThisFrame())
+                _jump?.OnJumpPressed();
+
+            if (_input.Jump.WasReleasedThisFrame())
+                _jump?.OnJumpReleased();
+
 
             if (_input.Attack.WasPressedThisFrame()) StartAttack();
 
