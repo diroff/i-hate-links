@@ -1,4 +1,5 @@
 using Abstractions.Components;
+using Abstractions.Interfaces;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -9,9 +10,7 @@ namespace Gameplay.Components.Interaction
     {
         protected override void UpdateInteractionTargets()
         {
-            var hits = Physics.SphereCastAll(transform.position, InteractionRange,
-                                           Vector3.forward, 0f, InteractionMask, TriggerMode);
-
+            var hits = Physics.SphereCastAll(transform.position, InteractionRange, Vector3.forward, 0f, InteractionMask, TriggerMode);
             var found = new HashSet<IInteractable>();
 
             foreach (var hit in hits)

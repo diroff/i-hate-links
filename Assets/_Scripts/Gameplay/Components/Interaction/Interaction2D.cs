@@ -1,4 +1,5 @@
 using Abstractions.Components;
+using Abstractions.Interfaces;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -9,9 +10,7 @@ namespace Gameplay.Components.Interaction
     {
         protected override void UpdateInteractionTargets()
         {
-            var hits = Physics2D.CircleCastAll(transform.position, InteractionRange,
-                                              Vector2.zero, 0f, InteractionMask);
-
+            var hits = Physics2D.CircleCastAll(transform.position, InteractionRange, Vector2.zero, 0f, InteractionMask);
             var found = new HashSet<IInteractable>();
 
             foreach (var hit in hits)

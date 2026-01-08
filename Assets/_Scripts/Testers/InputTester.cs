@@ -1,4 +1,5 @@
 using Abstractions.Components;
+using Gameplay.Components.Health;
 using Reflex.Attributes;
 using Services;
 using UnityEngine;
@@ -14,12 +15,26 @@ namespace Testers
         private MovementComponent _movement;
         private InteractionComponent _interaction;
         private JumpComponent _jump;
+        private IntHealthComponent _health;
 
         private void Awake()
         {
             _movement = GetComponent<MovementComponent>();
             _interaction = GetComponent<InteractionComponent>();
             _jump = GetComponent<JumpComponent>();
+            _health = GetComponent<IntHealthComponent>();
+        }
+
+        private void OnEnable()
+        {
+            _health.OnDied += OnDied;
+            _health.OnRevived += OnRevive;
+        }
+
+        private void OnDisable()
+        {
+            _health.OnDied -= OnDied;
+            _health.OnRevived -= OnRevive;
         }
 
         private void Start()
@@ -51,12 +66,34 @@ namespace Testers
             if (_input.Attack.WasPressedThisFrame()) StartAttack();
 
             if (_input.Interact.WasPressedThisFrame())
+            {
                 _interaction?.Interact();
+                _health.Revive(gameObject);
+            }
 
             if (_input.Crouch.WasPressedThisFrame()) Crouch();
         }
 
-        private void StartAttack() => Debug.Log("Attack");
-        private void Crouch() => Debug.Log("Crouch");
+        private void OnDied(GameObject dead, GameObject killer)
+        {
+            _movement.DisableMoving();
+            _jump.DisableJumping();
+        }
+
+        private void OnRevive(GameObject sender)
+        {
+            _movement.EnableMoving();
+            _jump.EnableJumping();
+        }
+
+        private void StartAttack()
+        {
+            _health.Damage(2, gameObject);
+        }
+
+        private void Crouch()
+        {
+            _health.ChangeMaxValue(_health.MaxHealth + 2, gameObject);
+        }
     }
 }

@@ -1,5 +1,4 @@
-using Reflex.Extensions;
-using Reflex.Injectors;
+using Abstractions.Interfaces;
 using UnityEngine;
 
 namespace Testers

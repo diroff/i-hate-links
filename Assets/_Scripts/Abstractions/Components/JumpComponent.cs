@@ -15,6 +15,7 @@ namespace Abstractions.Components
         [SerializeField] protected float JumpHeight = 4f;
         [SerializeField] protected float JumpTimeToApex = 0.4f;
         [SerializeField] protected int AdditionalJumps = 0;
+        [SerializeField] protected bool CanJumpByStart = true;
 
         [Header("Gravity modifiers")]
         [SerializeField] protected float FallGravityMultiplier = 1.5f;
@@ -34,6 +35,7 @@ namespace Abstractions.Components
         public bool InputRequest { get; protected set; }
         public bool HandleLongJumps { get; protected set; }
         public bool IsActiveCoyoteTime { get; protected set; }
+        public bool CanJump { get; protected set; }
 
         protected int AdditionalJumpsAvailable;
 
@@ -48,6 +50,9 @@ namespace Abstractions.Components
         protected virtual void Awake()
         {
             AdditionalJumpsAvailable = AdditionalJumps;
+
+            if (CanJumpByStart)
+                EnableJumping();
         }
 
         protected virtual void Update()
@@ -71,6 +76,16 @@ namespace Abstractions.Components
         public void OnJumpReleased()
         {
             HandleLongJumps = false;
+        }
+
+        public virtual void EnableJumping()
+        {
+            CanJump = true;
+        }
+
+        public virtual void DisableJumping()
+        {
+            CanJump = false;
         }
 
         private void UpdateTimers(float delta)
@@ -105,6 +120,9 @@ namespace Abstractions.Components
         private void TryJump()
         {
             if (!InputRequest)
+                return;
+
+            if (!CanJump)
                 return;
 
             bool canUseCoyote = IsActiveCoyoteTime && !_hasJumpedThisAirTime;

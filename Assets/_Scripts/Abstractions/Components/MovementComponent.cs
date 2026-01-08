@@ -10,12 +10,17 @@ namespace Abstractions.Components
         [Min(0)][SerializeField] protected float RunAcceleration;
         [Range(0f, 1f)][SerializeField] protected float GroundDecay;
 
+        [Header("Other settings")]
+        [SerializeField] protected bool CanMoveByStart = true;
+
         protected float CurrentSpeed;
         protected float SpeedBonus;
 
         protected Vector3 DesiredDirection;
         protected Vector3 CurrentDirection;
         protected bool IsMoving;
+
+        public bool CanMove { get; protected set; }
 
         public Action<Vector3> OnMoveStarted;
         public Action OnMoveStopped;
@@ -24,10 +29,11 @@ namespace Abstractions.Components
 
         protected virtual void Awake()
         {
-            if(MaxSpeed < BaseSpeed)
-                MaxSpeed = BaseSpeed;
-
+            MaxSpeed = Mathf.Clamp(MaxSpeed, CurrentSpeed, MaxSpeed);
             SetSpeed(BaseSpeed);
+
+            if (CanMoveByStart)
+                EnableMoving();
         }
 
         public void Move(Vector3 inputDirection)
@@ -44,6 +50,16 @@ namespace Abstractions.Components
                 return;
 
             HandleDirectionChange(hasInput, inputDirection);
+        }
+
+        public virtual void EnableMoving()
+        {
+            CanMove = true;
+        }
+
+        public virtual void DisableMoving()
+        {
+            CanMove = false;
         }
 
         private bool HandleStartMove(bool hasInput, Vector3 inputDirection)
@@ -82,6 +98,9 @@ namespace Abstractions.Components
 
         protected void ProcessMovement(float deltaTime)
         {
+            if (!CanMove)
+                return;
+
             if (IsMoving)
                 ApplyMovement(DesiredDirection, deltaTime);
             else

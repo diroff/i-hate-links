@@ -20,6 +20,13 @@ namespace Gameplay.Components.Movement
             ProcessMovement(Time.fixedDeltaTime);
         }
 
+        public override void DisableMoving()
+        {
+            base.DisableMoving();
+
+            Rigidbody.linearVelocity = Vector2.zero;
+        }
+
         protected override void ApplyMovement(Vector3 direction, float deltaTime)
         {
             var currentVelocityX = Rigidbody.linearVelocity.x;
