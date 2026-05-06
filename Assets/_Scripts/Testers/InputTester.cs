@@ -1,5 +1,4 @@
 using Abstractions.Components;
-using Gameplay.Components.Health;
 using Reflex.Attributes;
 using Services;
 using UnityEngine;
@@ -15,31 +14,74 @@ namespace Testers
         private MovementComponent _movement;
         private InteractionComponent _interaction;
         private JumpComponent _jump;
-        private IntHealthComponent _health;
+        private HealthComponent _health;
+        private Animator _animator;
 
         private void Awake()
         {
             _movement = GetComponent<MovementComponent>();
             _interaction = GetComponent<InteractionComponent>();
             _jump = GetComponent<JumpComponent>();
-            _health = GetComponent<IntHealthComponent>();
+            _health = GetComponent<HealthComponent>();
+            _animator = GetComponent<Animator>();
         }
 
         private void OnEnable()
         {
             _health.OnDied += OnDied;
             _health.OnRevived += OnRevive;
+            _jump.JumpStarted += OnJumpStarted;
+            _jump.Landed += OnLanded;
+            _movement.OnDirectionChanged += OnDirectionChanged;
+            _movement.OnMoveStarted += OnMoveStarted;
+            _movement.OnMoveStopped += OnMoveStopped;
         }
 
         private void OnDisable()
         {
             _health.OnDied -= OnDied;
             _health.OnRevived -= OnRevive;
+            _jump.JumpStarted -= OnJumpStarted;
+            _jump.Landed -= OnLanded;
+            _movement.OnDirectionChanged -= OnDirectionChanged;
+            _movement.OnMoveStarted -= OnMoveStarted;
+            _movement.OnMoveStopped -= OnMoveStopped;
         }
 
         private void Start()
         {
             _input.EnableGameplay();
+        }
+
+        private void OnMoveStarted(Vector3 direction)
+        {
+            _animator.SetFloat("Speed", 1f);
+        }
+
+        private void OnMoveStopped()
+        {
+            _animator.SetFloat("Speed", 0f);
+        }
+
+        private void OnJumpStarted()
+        {
+            _animator.SetBool("IsJump", true);
+        }
+
+        private void OnLanded()
+        {
+            _animator.SetBool("IsJump", false);
+        }
+
+        private void OnDirectionChanged(Vector3 direction)
+        {
+            if (direction.x == 0)
+                return;
+
+            if (direction.x > 0)
+                transform.rotation = Quaternion.Euler(0, 0, 0);
+            else
+                transform.rotation = Quaternion.Euler(0, 180, 0);
         }
 
         private void Update()
@@ -88,7 +130,7 @@ namespace Testers
 
         private void StartAttack()
         {
-            _health.Damage(2, gameObject);
+            _animator.SetTrigger("Attack");
         }
 
         private void Crouch()

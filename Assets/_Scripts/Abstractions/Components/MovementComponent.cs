@@ -38,18 +38,24 @@ namespace Abstractions.Components
 
         public void Move(Vector3 inputDirection)
         {
+            if (!CanMove)
+            {
+                HandleStopMove(false);
+                return;
+            }
+
             inputDirection = inputDirection.normalized;
             DesiredDirection = inputDirection;
 
             bool hasInput = HasMovementInput(inputDirection);
+
+            HandleDirectionChange(hasInput, inputDirection);
 
             if (HandleStartMove(hasInput, inputDirection)) 
                 return;
 
             if (HandleStopMove(hasInput)) 
                 return;
-
-            HandleDirectionChange(hasInput, inputDirection);
         }
 
         public virtual void EnableMoving()
@@ -89,6 +95,9 @@ namespace Abstractions.Components
 
         private void HandleDirectionChange(bool hasInput, Vector3 inputDirection)
         {
+            if (!CanMove)
+                return;
+
             if (CurrentDirection != inputDirection)
             {
                 CurrentDirection = inputDirection;
