@@ -2,8 +2,8 @@ using UnityEngine;
 
 namespace Abstractions.Interfaces
 {
-    public interface IDamageable<T>
+    public interface IDamageable
     {
-        public void Damage(T value, GameObject sender);
+        public void Damage(float value, GameObject sender);
     }
 }
