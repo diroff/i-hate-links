@@ -2,16 +2,18 @@ using UnityEngine;
 
 namespace Abstractions.Components.View
 {
-    public abstract class BaseHealthView<T> : MonoBehaviour
+    public abstract class BaseHealthView : MonoBehaviour
     {
+        [SerializeField] protected HealthComponent Health;
+
         protected virtual void OnEnable()
         {
-            SubscribeToHealthEvents();
+            Health.OnHealthChanged += UpdateHealthView;
         }
 
         protected virtual void OnDisable()
         {
-            UnsubscribeToHealthEvents();
+            Health.OnHealthChanged -= UpdateHealthView;
         }
 
         protected virtual void Start()
@@ -19,9 +21,11 @@ namespace Abstractions.Components.View
             InitializeHealthView();
         }
 
-        protected abstract void InitializeHealthView();
-        protected abstract void SubscribeToHealthEvents();
-        protected abstract void UnsubscribeToHealthEvents();
-        protected abstract void UpdateHealthView(T currentValue, T maxValue);
+        protected virtual void InitializeHealthView()
+        {
+            UpdateHealthView(Health.CurrentHealth, Health.MaxHealth);
+        }
+
+        protected abstract void UpdateHealthView(float currentValue, float maxValue);
     }
 }

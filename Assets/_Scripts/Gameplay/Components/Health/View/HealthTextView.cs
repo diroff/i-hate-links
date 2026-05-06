@@ -1,9 +1,10 @@
+using Abstractions.Components.View;
 using TMPro;
 using UnityEngine;
 
-namespace Abstractions.Components.View
+namespace Gameplay.Components.View
 {
-    public abstract class BaseHealthTextView<T> : BaseHealthView<T>
+    public class HealthTextView : BaseHealthView
     {
         [SerializeField] protected TMP_Text Text;
 
@@ -13,7 +14,7 @@ namespace Abstractions.Components.View
                 Text = GetComponentInChildren<TMP_Text>();
         }
 
-        protected override void UpdateHealthView(T currentValue, T maxValue)
+        protected override void UpdateHealthView(float currentValue, float maxValue)
         {
             Text.text = $"{currentValue.ToString()}/{maxValue.ToString()}";
         }
