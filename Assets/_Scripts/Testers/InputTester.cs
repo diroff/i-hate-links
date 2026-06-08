@@ -105,15 +105,12 @@ namespace Testers
                 _jump?.OnJumpReleased();
 
 
-            if (_input.Attack.WasPressedThisFrame()) StartAttack();
-
             if (_input.Interact.WasPressedThisFrame())
             {
                 _interaction?.Interact();
+                _animator.SetTrigger("Interact");
                 _health.Revive(gameObject);
             }
-
-            if (_input.Crouch.WasPressedThisFrame()) Crouch();
         }
 
         private void OnDied(GameObject dead, GameObject killer)
@@ -126,16 +123,6 @@ namespace Testers
         {
             _movement.EnableMoving();
             _jump.EnableJumping();
-        }
-
-        private void StartAttack()
-        {
-            _animator.SetTrigger("Attack");
-        }
-
-        private void Crouch()
-        {
-            _health.ChangeMaxValue(_health.MaxHealth + 2, gameObject);
         }
     }
 }

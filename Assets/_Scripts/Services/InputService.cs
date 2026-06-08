@@ -11,9 +11,7 @@ namespace Services
 
         public InputAction Move => _input.Player.Move;
         public InputAction Jump => _input.Player.Jump;
-        public InputAction Attack => _input.Player.Attack;
         public InputAction Interact => _input.Player.Interact;
-        public InputAction Crouch => _input.Player.Crouch;
 
         public InputSystem_Actions Actions => _input;
 
