@@ -8,10 +8,7 @@ namespace Installers
     {
         public void InstallBindings(ContainerBuilder containerBuilder)
         {
-            var key = FindAnyObjectByType<TestKey>();
 
-            if (key != null)
-                containerBuilder.AddSingleton(key);
         }
     }
 }

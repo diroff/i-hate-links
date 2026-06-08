@@ -1,6 +1,7 @@
+using Abstractions.Components.Inventory;
 using Abstractions.Interfaces;
+using Data;
 using DG.Tweening;
-using Reflex.Attributes;
 using UnityEngine;
 
 namespace Testers
@@ -8,14 +9,16 @@ namespace Testers
     public class TestChest : MonoBehaviour, IInteractable
     {
         [SerializeField] private SpriteRenderer _spriteRenderer;
+        [SerializeField] private Sprite _openedSprite;
+        [SerializeField] private Sprite _closedSprite;
+
+        [SerializeField] private ItemDefinition _requiredItem;
         [SerializeField] private Rigidbody2D _coinPrefab;
         [SerializeField] private int _coinsLimit = 15;
 
         [SerializeField] private float _spawnForce = 5f;
         [SerializeField] private float _spawnRadius = 0.5f;
         [SerializeField] private float _torqueForce = 300f;
-
-        [Inject] private TestKey _key;
 
         private bool _isOpened = false;
 
@@ -25,29 +28,38 @@ namespace Testers
 
         private void Awake()
         {
-            _spriteRenderer.color = Color.red;
+            _spriteRenderer.sprite = _closedSprite;
         }
 
         public void Interact(GameObject interactor)
         {
             if (!_isOpened)
-                TryToOpenChest();
+                TryToOpenChest(interactor);
             else
                 LootChest();
         }
 
-        private void TryToOpenChest()
+        private void TryToOpenChest(GameObject interactor)
         {
-            if (_key != null && _key.IsPickedUp)
+            interactor.TryGetComponent(out InventoryComponent inventory);
+
+            if (inventory == null)
             {
-                _isOpened = true;
-                _spriteRenderer.color = Color.green;
-                Debug.Log("<color=green>Сундук открыт!</color>");
+                Debug.Log("<color=red>У тебя даже карманов нет!</color>");
+                return;
             }
-            else
+
+            if (!inventory.HasItem(_requiredItem))
             {
                 Debug.Log("<color=red>Нужен ключ!</color>");
+                return;
             }
+
+            inventory.Remove(_requiredItem);
+
+            _isOpened = true;
+            _spriteRenderer.sprite = _openedSprite;
+            Debug.Log("<color=green>Сундук открыт!</color>");
         }
 
         private void LootChest()
