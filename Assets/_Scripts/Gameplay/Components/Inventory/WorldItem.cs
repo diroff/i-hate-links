@@ -10,6 +10,8 @@ namespace Gameplay.Components.Inventory
         [SerializeField] protected ItemDefinition Item;
         [SerializeField] protected int Amount = 1;
 
+        public ItemDefinition ItemDefinition => Item;
+
         public void Interact(GameObject interactor)
         {
             if (Item == null)

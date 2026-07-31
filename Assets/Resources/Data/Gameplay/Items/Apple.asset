@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Apple
   m_EditorClassIdentifier: Assembly-CSharp::Data.ItemDefinition
   <Id>k__BackingField: Food_Apple
-  <DisplayName>k__BackingField: Apple
+  <DescriptionKey>k__BackingField: Food_Apple_desc
   <Icon>k__BackingField: {fileID: 21300000, guid: 83e0084333274b241bc74de8a173de6e, type: 3}
   <MaxStack>k__BackingField: 3

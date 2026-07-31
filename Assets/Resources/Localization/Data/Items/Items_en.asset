@@ -9,17 +9,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97269afb30aa84742ae3f3342603618a, type: 3}
-  m_Name: UITable_en
-  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.AssetTable
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Items_en
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
   m_LocaleId:
     m_Code: en
-  m_SharedData: {fileID: 11400000, guid: a4a565bbc8978554f8ddc89b782af4d0, type: 2}
+  m_SharedData: {fileID: 11400000, guid: d0abd3d4235b0fa43bd874a20e1af863, type: 2}
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 15593533440
-    m_Localized: '9a2fa1b022f3431439f5b929e4aab08e[en]'
+  - m_Id: 87853002752
+    m_Localized: Apple
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147663777792
+    m_Localized: Key
     m_Metadata:
       m_Items: []
   references:

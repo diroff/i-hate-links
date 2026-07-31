@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Localization-Assets-English (en)
   m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
   m_GroupName: Localization-Assets-English (en)
-  m_GUID: 94165a29da44113438dbf5064a392259
+  m_GUID: 1269b50e011c5eb48a3375a0db29928a
   m_SerializeEntries:
   - m_GUID: 9a2fa1b022f3431439f5b929e4aab08e
     m_Address: en

@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 97269afb30aa84742ae3f3342603618a, type: 3}
-  m_Name: UITable_ru
+  m_Name: UITable_en
   m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.AssetTable
   m_LocaleId:
-    m_Code: ru
+    m_Code: en
   m_SharedData: {fileID: 11400000, guid: a4a565bbc8978554f8ddc89b782af4d0, type: 2}
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 15593533440
-    m_Localized: 'fd8ca6f4590302949849be56a539fccc[ru]'
+  - m_Id: 8098312192
+    m_Localized: '9a2fa1b022f3431439f5b929e4aab08e[en]'
     m_Metadata:
       m_Items: []
   references:

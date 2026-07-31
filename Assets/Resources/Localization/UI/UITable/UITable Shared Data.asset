@@ -15,27 +15,27 @@ MonoBehaviour:
   m_TableCollectionName: UITable
   m_TableCollectionNameGuidString: a4a565bbc8978554f8ddc89b782af4d0
   m_Entries:
-  - m_Id: 15593533440
-    m_Key: ui.main_menu.sprite.flag
+  - m_Id: 8098312192
+    m_Key: ui.main_menu.sprites.flag
     m_Metadata:
       m_Items: []
   m_Metadata:
     m_Items:
-    - rid: 4311757537527988489
+    - rid: 4311757553768333473
   m_KeyGenerator:
-    rid: 4311757537527988487
+    rid: 4311757553768333472
   references:
     version: 2
     RefIds:
-    - rid: 4311757537527988487
+    - rid: 4311757553768333472
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:
-        m_CustomEpoch: 1785451253574
-    - rid: 4311757537527988489
+        m_CustomEpoch: 1785508197124
+    - rid: 4311757553768333473
       type: {class: AssetTypeMetadata, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
         m_Entries:
-        - m_KeyId: 15593533440
+        - m_KeyId: 8098312192
           m_TableCodes:
           - en
           - ru

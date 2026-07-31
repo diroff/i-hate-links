@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Localization-Assets-Russian (ru)
   m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
   m_GroupName: Localization-Assets-Russian (ru)
-  m_GUID: 4e47cbde4f4f1574399c4aa544cec6d7
+  m_GUID: a04d5d0dc5aefdc4cb3d472108cbc188
   m_SerializeEntries:
   - m_GUID: fd8ca6f4590302949849be56a539fccc
     m_Address: ru

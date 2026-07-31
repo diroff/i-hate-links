@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Key
   m_EditorClassIdentifier: Assembly-CSharp::Data.ItemDefinition
   <Id>k__BackingField: Quest_Key
-  <DisplayName>k__BackingField: Key
+  <DescriptionKey>k__BackingField: Quest_Key_desc
   <Icon>k__BackingField: {fileID: 21300000, guid: 4451dc7fb0ddd204ea1e61b1212adcf4, type: 3}
   <MaxStack>k__BackingField: 1
