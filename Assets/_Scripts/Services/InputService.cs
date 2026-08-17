@@ -1,6 +1,7 @@
 using Abstractions.Interfaces;
 using Cysharp.Threading.Tasks;
 using System;
+using UnityEngine;
 using UnityEngine.InputSystem;
 
 namespace Services
@@ -9,9 +10,9 @@ namespace Services
     {
         private InputSystem_Actions _input;
 
-        public InputAction Move => _input.Player.Move;
-        public InputAction Jump => _input.Player.Jump;
-        public InputAction Interact => _input.Player.Interact;
+        public Vector2 MoveDirection => _input.Player.Move.ReadValue<Vector2>();
+        public InputAction JumpAction => _input.Player.Jump;
+        public InputAction InteractAction => _input.Player.Interact;
 
         public InputSystem_Actions Actions => _input;
 
@@ -22,7 +23,7 @@ namespace Services
 
         public UniTask Initialize()
         {
-            _input.Enable();
+            EnableGameplay();
             return UniTask.CompletedTask;
         }
 
@@ -32,9 +33,20 @@ namespace Services
             _input?.Dispose();
         }
 
-        public void EnableGameplay() => _input.Player.Enable();
-        public void DisableGameplay() => _input.Player.Disable();
-        public void EnableUI() => _input.UI.Enable();
-        public void DisableUI() => _input.UI.Disable();
+        public void EnableGameplay()
+        {
+            _input.UI.Disable();
+            _input.Player.Enable();
+        }
+
+        public void EnableUI()
+        {
+            _input.Player.Disable();
+            _input.UI.Enable();
+        }
+
+        public string GetBindingsJson() => _input.SaveBindingOverridesAsJson();
+        public void ApplyBindingsJson(string json) => _input.LoadBindingOverridesFromJson(json);
+        public void ResetBindings() => _input.RemoveAllBindingOverrides();
     }
 }

@@ -19,6 +19,7 @@ namespace Abstractions.Components
         public event Action<IInteractable> OnTargetEnter;
         public event Action<IInteractable> OnTargetExit;
         public event Action<IInteractable> OnTargetChanged;
+        public event Action<IInteractable> OnInteracted;
 
         protected virtual void Update()
         {
@@ -52,13 +53,14 @@ namespace Abstractions.Components
 
             OnTargetExit?.Invoke(target);
 
-            if(CurrentTarget == target)
+            if (CurrentTarget == target)
                 SetCurrentTarget(null);
         }
 
         public void Interact()
         {
             CurrentTarget?.Interact(gameObject);
+            OnInteracted?.Invoke(CurrentTarget);
         }
 
         protected virtual void OnDrawGizmosSelected()

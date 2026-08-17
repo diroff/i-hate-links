@@ -8,7 +8,7 @@ using UnityEngine.Localization.Settings;
 
 namespace Testers
 {
-    public class InteractionViewTester : MonoBehaviour
+    public class ActiveInteractionView : MonoBehaviour
     {
         [SerializeField] private InteractionComponent _interaction;
         [SerializeField] private TMP_Text _interactionText;
