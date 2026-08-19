@@ -3813,7 +3813,7 @@ MonoBehaviour:
   _duration: 0.15
   _easeIn: 6
   _easeOut: 27
-  _levelName: TestGameplay
+  _levelName: Level0
 --- !u!1 &1622940691
 GameObject:
   m_ObjectHideFlags: 0

@@ -170,9 +170,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faae085019379ed489361483c311d343, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Gameplay.Components.Movement.Rigidbody2DMovement
-  BaseSpeed: 9
-  MaxSpeed: 9
-  RunAcceleration: 14
+  BaseSpeed: 7
+  MaxSpeed: 7
+  RunAcceleration: 12
   GroundDecay: 0.3
   CanMoveByStart: 1
 --- !u!114 &3156437830478146324
@@ -192,7 +192,7 @@ MonoBehaviour:
     m_Bits: 8
   _groundCheckOffset: {x: 0.03, y: -0.95}
   _groundCheckSize: {x: 0.93, y: 0.1}
-  JumpHeight: 4.5
+  JumpHeight: 4.25
   JumpTimeToApex: 0.4
   AdditionalJumps: 0
   CanJumpByStart: 1
