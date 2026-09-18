@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 37a2461a78efd304395d5123308c8500
+guid: 114848ab4d11d4a48916b9b5052ec5f7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6836931124464861196
-    second: CharacterWalk3_0
+      213: -3398875884749613997
+    second: CharacterWalkSheet_0
+  - first:
+      213: -2924139761847748637
+    second: CharacterWalkSheet_1
+  - first:
+      213: 4657121355476251973
+    second: CharacterWalkSheet_2
+  - first:
+      213: -2576313976306233132
+    second: CharacterWalkSheet_3
+  - first:
+      213: 4796575271941802895
+    second: CharacterWalkSheet_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +58,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -126,7 +138,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CharacterWalk3_0
+      name: CharacterWalkSheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -134,15 +146,103 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4ffb57cad575e11a0800000000000000
-      internalID: -6836931124464861196
+      spriteID: 3549bdd0464c4d0d0800000000000000
+      internalID: -3398875884749613997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterWalkSheet_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e7387d116e5b67d0800000000000000
+      internalID: -2924139761847748637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterWalkSheet_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5453c05c23b61a040800000000000000
+      internalID: 4657121355476251973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterWalkSheet_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d09464a6181f3cd0800000000000000
+      internalID: -2576313976306233132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterWalkSheet_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8b8386ebcbd09240800000000000000
+      internalID: 4796575271941802895
       vertices: []
       indices: 
       edges: []
@@ -151,7 +251,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 6569367b67d4c4e468913b0d5f68c2e2
     internalID: 0
     vertices: []
     indices: 
@@ -159,9 +259,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      CharacterWalk3_0: -6836931124464861196
+      CharacterWalkSheet_0: -3398875884749613997
+      CharacterWalkSheet_1: -2924139761847748637
+      CharacterWalkSheet_2: 4657121355476251973
+      CharacterWalkSheet_3: -2576313976306233132
+      CharacterWalkSheet_4: 4796575271941802895
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
