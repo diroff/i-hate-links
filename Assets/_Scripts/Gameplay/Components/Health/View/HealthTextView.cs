@@ -16,7 +16,7 @@ namespace Gameplay.Components.View
 
         protected override void UpdateHealthView(float currentValue, float maxValue)
         {
-            Text.text = $"{currentValue.ToString()}/{maxValue.ToString()}";
+            Text.text = $"{currentValue:0.#}/{maxValue:0}";
         }
     }
 }

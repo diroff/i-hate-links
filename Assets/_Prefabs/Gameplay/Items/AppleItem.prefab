@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5534852546799572130}
   - component: {fileID: 807710085176608440}
   - component: {fileID: 3888231627629516424}
+  - component: {fileID: 6989918681683300724}
   m_Layer: 0
   m_Name: AppleItem
   m_TagString: Untagged
@@ -27,13 +28,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9051274464206386748}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.06975647, w: 0.9975641}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 8}
 --- !u!114 &5534852546799572130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,3 +154,23 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 0.8828125}
   m_EdgeRadius: 0
+--- !u!114 &6989918681683300724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9051274464206386748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2744b7cadc462ab4eba7ad08371e6f4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Gameplay.Components.Animations.RotationLoopAnimation
+  _target: {fileID: 824190825238582875}
+  _playOnAwake: 1
+  _rotationPerLoop: {x: 0, y: 0, z: -8}
+  _duration: 1.25
+  _ease: 4
+  _rotateMode: 3
+  _loopType: 1
+  _loops: -1
