@@ -18,7 +18,6 @@ GameObject:
   - component: {fileID: 3156437830478146324}
   - component: {fileID: 1477797737576764509}
   - component: {fileID: 3058292490757520128}
-  - component: {fileID: 2294077051216710711}
   m_Layer: 0
   m_Name: PlayerMain
   m_TagString: Untagged
@@ -41,6 +40,8 @@ Transform:
   m_Children:
   - {fileID: 4585034992532743871}
   - {fileID: 2190656645179964491}
+  - {fileID: 5829317537630769737}
+  - {fileID: 8203984613944619592}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2439461787591089916
@@ -229,25 +230,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Gameplay.Components.Inventory.ListInventoryComponent
   _items: []
---- !u!114 &2294077051216710711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 419618151636601276}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 723d969afea5d594f85b03d08595f23d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Testers.InteractionViewTester
-  _interaction: {fileID: 8605127940956791645}
-  _interactionText: {fileID: 5557472277992413404}
-  _tables:
-  - m_TableReference:
-      m_TableCollectionName: GUID:be5a02b0a15989f4f8305fa29db8891c
-  - m_TableReference:
-      m_TableCollectionName: GUID:d0abd3d4235b0fa43bd874a20e1af863
 --- !u!1 &4675727851169012277
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,6 +432,51 @@ MonoBehaviour:
   _rotateMode: 3
   _loopType: 1
   _loops: -1
+--- !u!1 &5530558444668102903
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8203984613944619592}
+  - component: {fileID: 4398845664395095337}
+  m_Layer: 0
+  m_Name: InteractionOutlineView
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8203984613944619592
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5530558444668102903}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2258268381022526093}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4398845664395095337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5530558444668102903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f735ad6c7704540a568deea0907120, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Gameplay.Components.Interaction.InteractionOutlineView
+  _interaction: {fileID: 8605127940956791645}
 --- !u!1 &5661555755209085087
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,3 +609,49 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &8548957597921578913
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5829317537630769737}
+  - component: {fileID: 5829804354128675736}
+  m_Layer: 0
+  m_Name: ActiveInteractionView
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5829317537630769737
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8548957597921578913}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2258268381022526093}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5829804354128675736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8548957597921578913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 723d969afea5d594f85b03d08595f23d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Testers.InteractionViewTester
+  _interaction: {fileID: 8605127940956791645}
+  _interactionText: {fileID: 5557472277992413404}
