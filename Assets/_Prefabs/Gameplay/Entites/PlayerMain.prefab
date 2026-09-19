@@ -243,6 +243,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Testers.InteractionViewTester
   _interaction: {fileID: 8605127940956791645}
   _interactionText: {fileID: 5557472277992413404}
+  _tables:
+  - m_TableReference:
+      m_TableCollectionName: GUID:be5a02b0a15989f4f8305fa29db8891c
+  - m_TableReference:
+      m_TableCollectionName: GUID:d0abd3d4235b0fa43bd874a20e1af863
 --- !u!1 &4675727851169012277
 GameObject:
   m_ObjectHideFlags: 0

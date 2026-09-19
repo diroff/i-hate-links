@@ -1,22 +1,31 @@
 using Abstractions.Components.Inventory;
-using Abstractions.Interfaces;
 using Data;
+using Gameplay.Components.Interaction;
 using UnityEngine;
+using UnityEngine.Localization;
 
 namespace Gameplay.Components.Inventory
 {
-    public class WorldItem : MonoBehaviour, IInteractable
+    public class WorldItem : InteractableComponent
     {
+        [Header("Item Settings")]
         [SerializeField] protected ItemDefinition Item;
         [SerializeField] protected int Amount = 1;
 
         public ItemDefinition ItemDefinition => Item;
 
-        public void Interact(GameObject interactor)
-        {
-            if (Item == null)
-                return;
+        public override LocalizedString InteractionName => Item != null ? Item.Name : base.InteractionName;
 
+        public override bool CanInteract(GameObject interactor)
+        {
+            if (!base.CanInteract(interactor))
+                return false;
+
+            return Item != null;
+        }
+
+        protected override void OnInteractInternal(GameObject interactor)
+        {
             if (!interactor.TryGetComponent(out InventoryComponent inventory))
                 return;
 
@@ -30,21 +39,13 @@ namespace Gameplay.Components.Inventory
 
         protected virtual void ProccessItemAdding(InventoryComponent inventory)
         {
-            Debug.Log("Adding...");
-
             inventory.Add(Item, Amount);
             OnItemAdded();
-            Debug.Log("Destroyed");
         }
 
         protected virtual void OnItemAdded()
         {
             Destroy(gameObject);
-        }
-
-        public bool CanInteract(GameObject interactor)
-        {
-            return Item != null;
         }
     }
 }

@@ -1,73 +1,69 @@
 using Abstractions.Components;
 using Abstractions.Interfaces;
-using Gameplay.Components.Inventory;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Localization;
-using UnityEngine.Localization.Settings;
 
-namespace Testers
+namespace Gameplay.UI
 {
     public class ActiveInteractionView : MonoBehaviour
     {
         [SerializeField] private InteractionComponent _interaction;
         [SerializeField] private TMP_Text _interactionText;
 
+        private LocalizedString _currentLocalizedString;
+
         private void OnEnable()
         {
-            ClearSelectedName();
-
+            ClearText();
             _interaction.OnTargetChanged += OnTargetChanged;
-            LocalizationSettings.SelectedLocaleChanged += OnSelectedLocaleChanged;
         }
 
         private void OnDisable()
         {
             _interaction.OnTargetChanged -= OnTargetChanged;
-            LocalizationSettings.SelectedLocaleChanged -= OnSelectedLocaleChanged;
+            UnsubscribeCurrentString();
         }
 
         private void OnTargetChanged(IInteractable interactable)
         {
-            if (interactable == null)
+            UnsubscribeCurrentString();
+
+            if (interactable is not IInteractableData dataHolder)
             {
-                ClearSelectedName();
+                ClearText();
                 return;
             }
 
-            if (interactable is not WorldItem)
+            _currentLocalizedString = dataHolder.InteractionName;
+
+            if (_currentLocalizedString == null || _currentLocalizedString.IsEmpty)
             {
-                ClearSelectedName();
+                ClearText();
                 return;
             }
 
-            var item = interactable as WorldItem;
-            var itemId = item.ItemDefinition.Id;
-
-            UpdateSelectedItem(itemId);
+            _currentLocalizedString.StringChanged += OnStringChanged;
+            _currentLocalizedString.RefreshString();
         }
 
-        private void UpdateSelectedItem(string key)
+        private void OnStringChanged(string localizedValue)
         {
-            _interactionText.text = LocalizationSettings.StringDatabase.GetLocalizedString("Items", key);
+            _interactionText.text = localizedValue;
         }
 
-        private void OnSelectedLocaleChanged(Locale locale)
+        private void UnsubscribeCurrentString()
         {
-            var interactable = _interaction.CurrentTarget;
-
-            if (interactable == null)
+            if (_currentLocalizedString != null)
             {
-                ClearSelectedName();
-                return;
+                _currentLocalizedString.StringChanged -= OnStringChanged;
+                _currentLocalizedString = null;
             }
-
-            OnTargetChanged(interactable);
         }
 
-        private void ClearSelectedName()
+        private void ClearText()
         {
-            _interactionText.text = "";
+            _interactionText.text = string.Empty;
         }
     }
 }

@@ -13,6 +13,26 @@ MonoBehaviour:
   m_Name: Key
   m_EditorClassIdentifier: Assembly-CSharp::Data.ItemDefinition
   <Id>k__BackingField: Quest_Key
-  <DescriptionKey>k__BackingField: Quest_Key_desc
+  <Name>k__BackingField:
+    m_TableReference:
+      m_TableCollectionName: GUID:d0abd3d4235b0fa43bd874a20e1af863
+    m_TableEntryReference:
+      m_KeyId: 147663777792
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  <Description>k__BackingField:
+    m_TableReference:
+      m_TableCollectionName: GUID:37fd6cf7f8ccec043949ec5d55d56dfc
+    m_TableEntryReference:
+      m_KeyId: 143373004800
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   <Icon>k__BackingField: {fileID: 21300000, guid: 4451dc7fb0ddd204ea1e61b1212adcf4, type: 3}
   <MaxStack>k__BackingField: 1
+  references:
+    version: 2
+    RefIds: []

@@ -1720,6 +1720,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14fc6dec44e50a24fbe0c46c8a480564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Testers.TestChest
+  _isInteractable: 1
+  _oneShot: 0
+  _interactionEntry:
+    m_TableReference:
+      m_TableCollectionName: GUID:be5a02b0a15989f4f8305fa29db8891c
+    m_TableEntryReference:
+      m_KeyId: 11839656402944
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _onInteract:
+    m_PersistentCalls:
+      m_Calls: []
   _spriteRenderer: {fileID: 1142358622}
   _openedSprite: {fileID: 21300000, guid: d949bb9d10ba37644934ae2ba3f04311, type: 3}
   _closedSprite: {fileID: 21300000, guid: 51bb503ceeca740448431bffbf1f0307, type: 3}
@@ -1729,6 +1743,9 @@ MonoBehaviour:
   _spawnForce: 5
   _spawnRadius: 0.5
   _torqueForce: 300
+  references:
+    version: 2
+    RefIds: []
 --- !u!61 &1142358624
 BoxCollider2D:
   m_ObjectHideFlags: 0

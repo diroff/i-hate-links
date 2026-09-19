@@ -1,13 +1,14 @@
 using Abstractions.Components.Inventory;
-using Abstractions.Interfaces;
 using Data;
 using DG.Tweening;
+using Gameplay.Components.Interaction;
 using UnityEngine;
 
 namespace Testers
 {
-    public class TestChest : MonoBehaviour, IInteractable
+    public class TestChest : InteractableComponent
     {
+        [Header("Chest Settings")]
         [SerializeField] private SpriteRenderer _spriteRenderer;
         [SerializeField] private Sprite _openedSprite;
         [SerializeField] private Sprite _closedSprite;
@@ -16,22 +17,29 @@ namespace Testers
         [SerializeField] private Rigidbody2D _coinPrefab;
         [SerializeField] private int _coinsLimit = 15;
 
+        [Header("Spawn Physics")]
         [SerializeField] private float _spawnForce = 5f;
         [SerializeField] private float _spawnRadius = 0.5f;
         [SerializeField] private float _torqueForce = 300f;
 
         private bool _isOpened = false;
-
         private int _spawnedCoinsCount;
-
-        public bool CanInteract(GameObject interactor) => _spawnedCoinsCount <= _coinsLimit;
 
         private void Awake()
         {
-            _spriteRenderer.sprite = _closedSprite;
+            if (_spriteRenderer != null && _closedSprite != null)
+                _spriteRenderer.sprite = _closedSprite;
         }
 
-        public void Interact(GameObject interactor)
+        public override bool CanInteract(GameObject interactor)
+        {
+            if (!base.CanInteract(interactor))
+                return false;
+
+            return _spawnedCoinsCount < _coinsLimit;
+        }
+
+        protected override void OnInteractInternal(GameObject interactor)
         {
             if (!_isOpened)
                 TryToOpenChest(interactor);
@@ -41,9 +49,7 @@ namespace Testers
 
         private void TryToOpenChest(GameObject interactor)
         {
-            interactor.TryGetComponent(out InventoryComponent inventory);
-
-            if (inventory == null)
+            if (!interactor.TryGetComponent(out InventoryComponent inventory))
             {
                 Debug.Log("<color=red>У тебя даже карманов нет!</color>");
                 return;
@@ -86,6 +92,11 @@ namespace Testers
             coin.angularVelocity = torque;
 
             Destroy(coin, 5f);
+
+            if (_spawnedCoinsCount >= _coinsLimit)
+            {
+                DestroyChest();
+            }
         }
 
         private void DestroyChest()
@@ -93,9 +104,11 @@ namespace Testers
             if (TryGetComponent(out Collider2D collider))
                 collider.enabled = false;
 
+            IsInteractable = false;
+
             var sequence = DOTween.Sequence();
 
-            sequence.Append(transform.DOPunchScale(Vector3.one * 1.5f, 0.6f * 0.6f, 10, 1f))
+            sequence.Append(transform.DOPunchScale(Vector3.one * 1.5f, 0.36f, 10, 1f))
                     .Join(transform.DOPunchRotation(new Vector3(0, 0, 360f * 3), 0.6f, 15, 0.5f))
                     .Join(_spriteRenderer.DOFade(0f, 0.4f))
                     .OnComplete(() =>
