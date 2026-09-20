@@ -12,6 +12,7 @@ namespace Installers
         {
             builder.AddSingleton(new SceneManagerService(_menuSceneName));
             builder.AddSingleton(new InputService());
+            builder.AddSingleton(new DialogueService());
         }
     }
 }

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ddf18e0f0f2f3b4882806db665e945c, type: 3}
+  m_Name: PlayerCharacter
+  m_EditorClassIdentifier: Assembly-CSharp::Data.Dialogue.DialogueCharacterSO
+  <Id>k__BackingField: Player
+  <Name>k__BackingField:
+    m_TableReference:
+      m_TableCollectionName: GUID:d56a05b46bbfd954fb4866b466810e31
+    m_TableEntryReference:
+      m_KeyId: 315218960384
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  <Portrait>k__BackingField: {fileID: 4657121355476251973, guid: 114848ab4d11d4a48916b9b5052ec5f7, type: 3}
+  references:
+    version: 2
+    RefIds: []

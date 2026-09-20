@@ -10,39 +10,51 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
-  m_Name: UIString Shared Data
+  m_Name: Dialogues Shared Data
   m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
-  m_TableCollectionName: UIString
-  m_TableCollectionNameGuidString: 6bf8356ae0b500149b5af464add16d84
+  m_TableCollectionName: Dialogues
+  m_TableCollectionNameGuidString: 8f34fbc1f8cd89348a9c5412e032b325
   m_Entries:
-  - m_Id: 11374063616
-    m_Key: ui.main_menu.buttons.play
+  - m_Id: 173824778240
+    m_Key: Test_dialogue_0_0
     m_Metadata:
       m_Items: []
-  - m_Id: 151258296320
-    m_Key: ui.main_menu.buttons.settings
+  - m_Id: 310181601280
+    m_Key: Test_dialogue_1_0
     m_Metadata:
       m_Items: []
-  - m_Id: 198880423936
-    m_Key: ui.main_menu.buttons.exit
+  - m_Id: 408991014912
+    m_Key: Test_dialogue_1_1
     m_Metadata:
       m_Items: []
-  - m_Id: 247496601600
-    m_Key: ui.main_menu.labels.greeting
+  - m_Id: 644262109184
+    m_Key: Test_dialogue_2_0
     m_Metadata:
       m_Items: []
-  - m_Id: 18792241321713664
-    m_Key: ui.gameplay.labels.menu
+  - m_Id: 2411905392640
+    m_Key: Test_dialogue_2_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2562313134080
+    m_Key: Test_dialogue_2_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5798734569472
+    m_Key: Test_dialogue_3_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5902388404224
+    m_Key: Test_dialogue_4_0
     m_Metadata:
       m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
-    rid: 4311757537527988483
+    rid: 1042064813598179481
   references:
     version: 2
     RefIds:
-    - rid: 4311757537527988483
+    - rid: 1042064813598179481
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:
-        m_CustomEpoch: 1785451053442
+        m_CustomEpoch: 1789929645524

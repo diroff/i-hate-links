@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Dialogues_en
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 8f34fbc1f8cd89348a9c5412e032b325, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 173824778240
+    m_Localized: Hi!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 310181601280
+    m_Localized: Apple! I love it!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 408991014912
+    m_Localized: It's so tasty!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 644262109184
+    m_Localized: "Oh, you shouldn\u2019t have come here..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2411905392640
+    m_Localized: Who are you anyway?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2562313134080
+    m_Localized: I won't tell :)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5798734569472
+    m_Localized: I need a key.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5902388404224
+    m_Localized: The chest disappeared because of your greed.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

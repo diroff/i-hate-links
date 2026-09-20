@@ -36,6 +36,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 4311757537527988484
+  - m_Id: 18792241321713664
+    m_Localized: Menu
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

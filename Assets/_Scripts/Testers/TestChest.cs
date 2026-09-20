@@ -1,6 +1,7 @@
 using Abstractions.Components.Inventory;
 using Data;
 using DG.Tweening;
+using Gameplay.Components;
 using Gameplay.Components.Interaction;
 using UnityEngine;
 
@@ -16,6 +17,11 @@ namespace Testers
         [SerializeField] private ItemDefinition _requiredItem;
         [SerializeField] private Rigidbody2D _coinPrefab;
         [SerializeField] private int _coinsLimit = 15;
+
+        [Space]
+        [SerializeField] private DialogueComponent _hasNoKeyDialogue;
+        [SerializeField] private DialogueComponent _openDialogue;
+        [SerializeField] private DialogueComponent _noMoreChestDialogue;
 
         [Header("Spawn Physics")]
         [SerializeField] private float _spawnForce = 5f;
@@ -50,22 +56,24 @@ namespace Testers
         private void TryToOpenChest(GameObject interactor)
         {
             if (!interactor.TryGetComponent(out InventoryComponent inventory))
-            {
-                Debug.Log("<color=red>У тебя даже карманов нет!</color>");
                 return;
-            }
 
             if (!inventory.HasItem(_requiredItem))
             {
-                Debug.Log("<color=red>Нужен ключ!</color>");
+                _hasNoKeyDialogue.StartDialogue();
                 return;
             }
 
+            OpenChest(inventory);
+        }
+
+        private void OpenChest(InventoryComponent inventory)
+        {
             inventory.Remove(_requiredItem);
 
             _isOpened = true;
             _spriteRenderer.sprite = _openedSprite;
-            Debug.Log("<color=green>Сундук открыт!</color>");
+            _openDialogue.StartDialogue();
         }
 
         private void LootChest()
@@ -114,7 +122,7 @@ namespace Testers
                     .OnComplete(() =>
                     {
                         _spriteRenderer.enabled = false;
-                        Debug.Log("Отлично, теперь не осталось даже сундука");
+                        _noMoreChestDialogue.StartDialogue();
                     });
         }
     }

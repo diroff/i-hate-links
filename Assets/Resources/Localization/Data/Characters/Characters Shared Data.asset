@@ -10,39 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
-  m_Name: UIString Shared Data
+  m_Name: Characters Shared Data
   m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
-  m_TableCollectionName: UIString
-  m_TableCollectionNameGuidString: 6bf8356ae0b500149b5af464add16d84
+  m_TableCollectionName: Characters
+  m_TableCollectionNameGuidString: d56a05b46bbfd954fb4866b466810e31
   m_Entries:
-  - m_Id: 11374063616
-    m_Key: ui.main_menu.buttons.play
+  - m_Id: 315218960384
+    m_Key: Player
     m_Metadata:
       m_Items: []
-  - m_Id: 151258296320
-    m_Key: ui.main_menu.buttons.settings
-    m_Metadata:
-      m_Items: []
-  - m_Id: 198880423936
-    m_Key: ui.main_menu.buttons.exit
-    m_Metadata:
-      m_Items: []
-  - m_Id: 247496601600
-    m_Key: ui.main_menu.labels.greeting
-    m_Metadata:
-      m_Items: []
-  - m_Id: 18792241321713664
-    m_Key: ui.gameplay.labels.menu
+  - m_Id: 430453268480
+    m_Key: Speaker
     m_Metadata:
       m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
-    rid: 4311757537527988483
+    rid: 1042064813598179475
   references:
     version: 2
     RefIds:
-    - rid: 4311757537527988483
+    - rid: 1042064813598179475
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:
-        m_CustomEpoch: 1785451053442
+        m_CustomEpoch: 1789929439602

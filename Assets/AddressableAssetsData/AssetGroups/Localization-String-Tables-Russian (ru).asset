@@ -35,6 +35,18 @@ MonoBehaviour:
     - Locale-ru
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9a5244ae0de8b09438e8a3f74ef816cf
+    m_Address: Characters_ru
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ru
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a005b3ef7b7a9f64f8901c56e94dd5fd
+    m_Address: Dialogues_ru
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ru
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c8dd8d5e7721f4c4890e6701db9f18d5
     m_Address: UIString_ru
     m_ReadOnly: 1
