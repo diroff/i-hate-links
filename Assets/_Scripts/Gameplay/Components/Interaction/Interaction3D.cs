@@ -1,53 +1,25 @@
-using Abstractions.Components;
-using Abstractions.Interfaces;
 using System.Collections.Generic;
-using System.Linq;
+using Abstractions.Components;
+using Abstractions.Components.Interaction;
 using UnityEngine;
 
 namespace Gameplay.Components.Interaction
 {
-    public class Interaction3D : InteractionComponent
+    public class Interaction3D : TypedInteractionComponent<InteractionCaster3D, Collider>
     {
-        protected override void UpdateInteractionTargets()
+        [SerializeField] private InteractionCaster3D _caster;
+
+        protected override InteractionCaster3D Caster => _caster;
+        protected override Transform Origin => _caster != null ? _caster.Origin : null;
+
+        private void Reset()
         {
-            var hits = Physics.SphereCastAll(transform.position, InteractionRange, Vector3.forward, 0f, InteractionMask, TriggerMode);
-            var found = new HashSet<IInteractable>();
-
-            foreach (var hit in hits)
-            {
-                if (!hit.collider.TryGetComponent<IInteractable>(out var interactable)) continue;
-                if (!interactable.CanInteract(gameObject)) continue;
-
-                found.Add(interactable);
-                if (!TargetsInRange.Contains(interactable))
-                    AddTarget(interactable);
-            }
-
-            for (int i = TargetsInRange.Count - 1; i >= 0; i--)
-            {
-                if (!found.Contains(TargetsInRange[i]))
-                    RemoveTarget(TargetsInRange[i]);
-            }
-
-            IInteractable best = null;
-            float bestDist = float.MaxValue;
-
-            foreach (var t in TargetsInRange)
-            {
-                float dist = Vector3.Distance(transform.position, t as MonoBehaviour ? (t as MonoBehaviour).transform.position : transform.position);
-                if (dist < bestDist)
-                {
-                    bestDist = dist;
-                    best = t;
-                }
-            }
-
-            SetCurrentTarget(best);
+            _caster = GetComponent<InteractionCaster3D>();
         }
 
-        protected override void DrawInteractionGizmo()
+        protected override IReadOnlyList<Collider> GetColliders(LayerMask mask)
         {
-            Gizmos.DrawWireSphere(transform.position, InteractionRange);
+            return _caster.GetColliders(mask);
         }
     }
 }

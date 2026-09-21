@@ -1,32 +1,23 @@
-using Abstractions.Interfaces;
 using System;
 using System.Collections.Generic;
+using Abstractions.Interfaces;
 using UnityEngine;
 
 namespace Abstractions.Components
 {
     public abstract class InteractionComponent : MonoBehaviour
     {
-        [SerializeField] protected float InteractionRange = 2f;
-        [SerializeField] protected LayerMask InteractionMask;
-        [SerializeField] protected QueryTriggerInteraction TriggerMode = QueryTriggerInteraction.Collide;
-
         public IInteractable CurrentTarget { get; protected set; }
+        public IReadOnlyList<IInteractable> TargetsInRange => InternalTargetsInRange;
 
-        public IReadOnlyList<IInteractable> TargetsInRange => _targetsInRange;
-        private readonly List<IInteractable> _targetsInRange = new();
+        protected readonly List<IInteractable> InternalTargetsInRange = new();
 
         public event Action<IInteractable> OnTargetEnter;
         public event Action<IInteractable> OnTargetExit;
         public event Action<IInteractable> OnTargetChanged;
         public event Action<IInteractable> OnInteracted;
 
-        protected virtual void Update()
-        {
-            UpdateInteractionTargets();
-        }
-
-        protected abstract void UpdateInteractionTargets();
+        public abstract void Interact();
 
         protected void SetCurrentTarget(IInteractable newTarget)
         {
@@ -39,16 +30,16 @@ namespace Abstractions.Components
 
         protected void AddTarget(IInteractable target)
         {
-            if (_targetsInRange.Contains(target))
+            if (InternalTargetsInRange.Contains(target))
                 return;
 
-            _targetsInRange.Add(target);
+            InternalTargetsInRange.Add(target);
             OnTargetEnter?.Invoke(target);
         }
 
         protected void RemoveTarget(IInteractable target)
         {
-            if (!_targetsInRange.Remove(target))
+            if (!InternalTargetsInRange.Remove(target))
                 return;
 
             OnTargetExit?.Invoke(target);
@@ -57,18 +48,9 @@ namespace Abstractions.Components
                 SetCurrentTarget(null);
         }
 
-        public void Interact()
+        protected void InvokeInteracted(IInteractable target)
         {
-            CurrentTarget?.Interact(gameObject);
-            OnInteracted?.Invoke(CurrentTarget);
+            OnInteracted?.Invoke(target);
         }
-
-        protected virtual void OnDrawGizmosSelected()
-        {
-            Gizmos.color = CurrentTarget != null ? Color.green : Color.yellow;
-            DrawInteractionGizmo();
-        }
-
-        protected abstract void DrawInteractionGizmo();
     }
 }

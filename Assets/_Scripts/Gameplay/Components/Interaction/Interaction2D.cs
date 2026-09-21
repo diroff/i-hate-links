@@ -1,57 +1,25 @@
-using Abstractions.Components;
-using Abstractions.Interfaces;
 using System.Collections.Generic;
-using System.Linq;
+using Abstractions.Components;
+using Abstractions.Components.Interaction;
 using UnityEngine;
 
 namespace Gameplay.Components.Interaction
 {
-    public class Interaction2D : InteractionComponent
+    public class Interaction2D : TypedInteractionComponent<InteractionCaster2D, Collider2D>
     {
-        protected override void UpdateInteractionTargets()
+        [SerializeField] private InteractionCaster2D _caster;
+
+        protected override InteractionCaster2D Caster => _caster;
+        protected override Transform Origin => _caster != null ? _caster.Origin : null;
+
+        private void Reset()
         {
-            var hits = Physics2D.CircleCastAll(transform.position, InteractionRange, Vector2.zero, 0f, InteractionMask);
-            var found = new HashSet<IInteractable>();
-
-            foreach (var hit in hits)
-            {
-                if (!hit.collider.TryGetComponent<IInteractable>(out var interactable)) continue;
-                if (!interactable.CanInteract(gameObject)) continue;
-
-                found.Add(interactable);
-                if (!TargetsInRange.Contains(interactable))
-                    AddTarget(interactable);
-            }
-
-            for (int i = TargetsInRange.Count - 1; i >= 0; i--)
-            {
-                if (!found.Contains(TargetsInRange[i]))
-                    RemoveTarget(TargetsInRange[i]);
-            }
-
-            IInteractable best = null;
-            float bestDist = float.MaxValue;
-
-            foreach (var t in TargetsInRange)
-            {
-                var mb = t as MonoBehaviour;
-                if (mb == null)
-                    continue;
-
-                float dist = Vector2.Distance(transform.position, mb.transform.position);
-                if (dist < bestDist)
-                {
-                    bestDist = dist;
-                    best = t;
-                }
-            }
-
-            SetCurrentTarget(best);
+            _caster = GetComponent<InteractionCaster2D>();
         }
 
-        protected override void DrawInteractionGizmo()
+        protected override IReadOnlyList<Collider2D> GetColliders(LayerMask mask)
         {
-            Gizmos.DrawWireSphere(transform.position, InteractionRange);
+            return _caster.GetColliders(mask);
         }
     }
 }
