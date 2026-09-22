@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec61be60b2a5e824c93a77a27cd492f7, type: 3}
+  m_Name: Lvl0_LockedDoor
+  m_EditorClassIdentifier: Assembly-CSharp::Data.Dialogue.DialogueSO
+  _nodes:
+  - _speaker: {fileID: 11400000, guid: 76310e8246b6d414595c1769b64fd284, type: 2}
+    _text:
+      m_TableReference:
+        m_TableCollectionName: GUID:8f34fbc1f8cd89348a9c5412e032b325
+      m_TableEntryReference:
+        m_KeyId: 597427400974336
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

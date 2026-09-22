@@ -50,6 +50,18 @@ MonoBehaviour:
     m_Localized: The chest disappeared because of your greed.
     m_Metadata:
       m_Items: []
+  - m_Id: 587026508521472
+    m_Localized: Let there be light!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 587133995950080
+    m_Localized: It seems this is the key to the door.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 597427400974336
+    m_Localized: Locked, need the key.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

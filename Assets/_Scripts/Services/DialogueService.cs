@@ -6,6 +6,7 @@ namespace Services
     public class DialogueService
     {
         public event Action<DialogueNode> OnNodeStarted;
+        public event Action OnDialogueStarted;
         public event Action OnDialogueEnded;
 
         public bool IsActive { get; private set; }
@@ -22,6 +23,7 @@ namespace Services
             _currentDialogue = dialogue;
             _currentIndex = 0;
             IsActive = true;
+            OnDialogueStarted?.Invoke();
 
             ShowCurrentNode();
         }

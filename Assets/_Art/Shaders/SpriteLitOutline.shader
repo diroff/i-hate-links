@@ -40,7 +40,6 @@ Shader "Sprites/Lit-Outline"
             HLSLPROGRAM
             #pragma vertex Vertex
             #pragma fragment Fragment
-
             #pragma shader_feature_local _OUTLINE_ON
 
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
@@ -57,11 +56,15 @@ Shader "Sprites/Lit-Outline"
                 float4 positionCS   : SV_POSITION;
                 float4 color        : COLOR;
                 float2 uv           : TEXCOORD0;
+                float2 screenUV     : TEXCOORD1;
             };
 
             TEXTURE2D(_MainTex);
             SAMPLER(sampler_MainTex);
             float4 _MainTex_TexelSize;
+
+            TEXTURE2D(_ShapeLightTexture0);
+            SAMPLER(sampler_ShapeLightTexture0);
 
             CBUFFER_START(UnityPerMaterial)
                 float4 _Color;
@@ -80,9 +83,13 @@ Shader "Sprites/Lit-Outline"
                 float3 pos = input.positionOS;
                 pos.xy *= _Flip.xy;
 
-                output.positionCS = TransformObjectToHClip(pos);
+                VertexPositionInputs vertexInput = GetVertexPositionInputs(pos);
+                output.positionCS = vertexInput.positionCS;
                 output.uv = input.uv;
                 output.color = input.color * _Color * _RendererColor;
+
+                float4 projPos = ComputeScreenPos(vertexInput.positionCS);
+                output.screenUV = projPos.xy / projPos.w;
 
                 return output;
             }
@@ -110,21 +117,30 @@ Shader "Sprites/Lit-Outline"
 
             float4 Fragment(Varyings input) : SV_Target
             {
-                float4 spriteColor = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, input.uv) * input.color;
+                float4 mainTex = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, input.uv);
+                float4 spriteColor = mainTex * input.color;
+
+                float4 lightColor = SAMPLE_TEXTURE2D(_ShapeLightTexture0, sampler_ShapeLightTexture0, input.screenUV);
+                float3 litSpriteRGB = spriteColor.rgb * lightColor.rgb;
 
                 #if defined(_OUTLINE_ON)
                 if (_OutlineThickness > 0.0)
                 {
                     float neighborAlpha = GetMaxNeighborAlpha(input.uv, _OutlineThickness);
+                    float isOutline = step(_AlphaThreshold, neighborAlpha) * (1.0 - step(_AlphaThreshold, mainTex.a));
                     
-                    float isOutline = step(_AlphaThreshold, neighborAlpha) * (1.0 - step(_AlphaThreshold, spriteColor.a));
-                    
-                    // Смешиваем цвет спрайта с цветом обводки
-                    float4 outlineFinal = _OutlineColor;
-                    outlineFinal.rgb *= outlineFinal.a; // Premultiplied Alpha
-                    
-                    spriteColor = lerp(spriteColor, outlineFinal, isOutline);
+                    float3 outlineRGB = _OutlineColor.rgb;
+                    float outlineAlpha = _OutlineColor.a;
+
+                    spriteColor.rgb = lerp(litSpriteRGB, outlineRGB, isOutline);
+                    spriteColor.a = lerp(spriteColor.a, outlineAlpha, isOutline);
                 }
+                else
+                {
+                    spriteColor.rgb = litSpriteRGB;
+                }
+                #else
+                spriteColor.rgb = litSpriteRGB;
                 #endif
 
                 spriteColor.rgb *= spriteColor.a;

@@ -47,6 +47,18 @@ MonoBehaviour:
     m_Key: Test_dialogue_4_0
     m_Metadata:
       m_Items: []
+  - m_Id: 587026508521472
+    m_Key: Lvl0_lamp_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 587133995950080
+    m_Key: Lvl0_key_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 597427400974336
+    m_Key: Lvl0_locked_door
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

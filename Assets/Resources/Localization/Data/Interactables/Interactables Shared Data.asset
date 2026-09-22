@@ -23,6 +23,10 @@ MonoBehaviour:
     m_Key: Interactables_Chest
     m_Metadata:
       m_Items: []
+  - m_Id: 952030864842752
+    m_Key: Interactables_Door
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
