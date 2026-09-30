@@ -261,7 +261,7 @@ GameObject:
   - component: {fileID: 135485327}
   - component: {fileID: 135485328}
   m_Layer: 0
-  m_Name: DialogueProcessHandlers
+  m_Name: DialogueProcessHandler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2439,6 +2439,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 135485327}
+  - {fileID: 1604615738}
   m_Father: {fileID: 603634901}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &388446211
@@ -3420,9 +3421,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 789414133}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ec3ab4560adff84184d852df70cbe51, type: 3}
+  m_Script: {fileID: 11500000, guid: 07177d6ad4d318b4ea3caa15919b0826, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Installers.TestSceneInstaller
+  m_EditorClassIdentifier: Assembly-CSharp::Installers.Level1Installer
+  _playerInstance: {fileID: 142285396014752151}
 --- !u!1 &884149314
 GameObject:
   m_ObjectHideFlags: 0
@@ -5216,6 +5218,57 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1604615737
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1604615738}
+  - component: {fileID: 1604615739}
+  m_Layer: 0
+  m_Name: PlayerDeathHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1604615738
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604615737}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 370737377}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1604615739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604615737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 516ea71cd2ed17744ab1775c60878f96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Gameplay.Components.Handlers.PlayerDeathHandler
+  _health: {fileID: 0}
+  _onDied:
+    m_PersistentCalls:
+      m_Calls: []
+  _onRevived:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1653649564
 GameObject:
   m_ObjectHideFlags: 0
@@ -6199,6 +6252,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: bbf97ccd96404334aa7ad2c51610f4c9, type: 3}
+--- !u!114 &142285396014752151 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2439461787591089916, guid: bbf97ccd96404334aa7ad2c51610f4c9, type: 3}
+  m_PrefabInstance: {fileID: 142285396014752150}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7344c3290a818042848b700e954a8f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Gameplay.Mechanics.Player.Player
 --- !u!1001 &4697155828948782868
 PrefabInstance:
   m_ObjectHideFlags: 0
