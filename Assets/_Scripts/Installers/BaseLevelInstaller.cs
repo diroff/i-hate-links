@@ -1,5 +1,7 @@
+using Abstractions.Interfaces;
 using Gameplay.Mechanics.Player;
 using Reflex.Core;
+using System;
 using UnityEngine;
 
 namespace Installers
@@ -12,7 +14,6 @@ namespace Installers
         public void InstallBindings(ContainerBuilder containerBuilder)
         {
             containerBuilder.AddSingleton(_playerInstance);
-
             InstallFeatureInstallers(containerBuilder);
         }
 
@@ -20,5 +21,5 @@ namespace Installers
         {
 
         }
-    }
+    }   
 }

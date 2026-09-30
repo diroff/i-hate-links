@@ -24,11 +24,6 @@ namespace Gameplay.Mechanics.Player
             _interaction = GetComponent<InteractionComponent>();
         }
 
-        private void Start()
-        {
-            _input.EnableGameplay(); //TODO: убрать, должно управляться в среде уровня
-        }
-
         private void Update()
         {
             if (IsInputBlocked)

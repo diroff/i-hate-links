@@ -45,6 +45,12 @@ namespace Services
             _input.UI.Enable();
         }
 
+        public void Disable()
+        {
+            _input.Player.Disable();
+            _input.UI.Disable();
+        }
+
         public string GetBindingsJson() => _input.SaveBindingOverridesAsJson();
         public void ApplyBindingsJson(string json) => _input.LoadBindingOverridesFromJson(json);
         public void ResetBindings() => _input.RemoveAllBindingOverrides();

@@ -8,6 +8,7 @@ namespace Services
         public event Action<DialogueNode> OnNodeStarted;
         public event Action OnDialogueStarted;
         public event Action OnDialogueEnded;
+        public event Action<DialogueSO> OnDialogueEndedWithSO;
 
         public bool IsActive { get; private set; }
         public DialogueNode CurrentNode => _currentDialogue.Nodes[_currentIndex];
@@ -47,8 +48,12 @@ namespace Services
                 return;
 
             IsActive = false;
-            _currentDialogue = null;
+
+            var endedDialogue = _currentDialogue;
+            OnDialogueEndedWithSO?.Invoke(endedDialogue);
             OnDialogueEnded?.Invoke();
+
+            _currentDialogue = null;
         }
 
         private void ShowCurrentNode()
