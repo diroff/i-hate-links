@@ -287,10 +287,10 @@ TextureImporter:
       name: Furniture2_7
       rect:
         serializedVersion: 2
-        x: 1696
+        x: 1694
         y: 15
-        width: 204
-        height: 142
+        width: 208
+        height: 144
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

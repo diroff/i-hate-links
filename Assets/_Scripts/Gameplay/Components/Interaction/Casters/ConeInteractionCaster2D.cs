@@ -23,8 +23,15 @@ namespace Gameplay.Components.Interaction.Casters
                 if (hit == null)
                     continue;
 
-                Vector2 directionToTarget = (hit.transform.position - Origin.position);
+                Vector2 closestPoint = hit.ClosestPoint(Origin.position);
+                Vector2 directionToTarget = closestPoint - (Vector2)Origin.position;
                 float distance = directionToTarget.magnitude;
+
+                if (distance <= Mathf.Epsilon)
+                {
+                    _results.Add(hit);
+                    continue;
+                }
 
                 if (distance > _radius)
                     continue;

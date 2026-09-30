@@ -27,6 +27,18 @@ MonoBehaviour:
     m_Key: Interactables_Door
     m_Metadata:
       m_Items: []
+  - m_Id: 3876487640096768
+    m_Key: Interactables_Phone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3876487652679680
+    m_Key: Interactables_Wardrobe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3876487652679681
+    m_Key: Interactables_Sofa
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -59,6 +59,42 @@ MonoBehaviour:
     m_Key: Lvl0_locked_door
     m_Metadata:
       m_Items: []
+  - m_Id: 3518988793651200
+    m_Key: Lvl1_start_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3518988818817024
+    m_Key: Lvl1_start_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3518988818817025
+    m_Key: Lvl1_lamp_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3518988818817026
+    m_Key: Lvl1_lamp_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3518988818817027
+    m_Key: Lvl1_sofa_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3518988818817028
+    m_Key: Lvl1_phone_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3518988818817029
+    m_Key: Lvl1_phone_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3518988818817030
+    m_Key: Lvl1_wardrobe_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3518988818817031
+    m_Key: Lvl1_exit_0
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

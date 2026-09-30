@@ -62,6 +62,45 @@ MonoBehaviour:
     m_Localized: Locked, need the key.
     m_Metadata:
       m_Items: []
+  - m_Id: 3518988793651200
+    m_Localized: Finally home...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3518988818817024
+    m_Localized: Alright then. The bedroom is waiting for me. I need to take a proper
+      look at that bookshelf.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3518988818817025
+    m_Localized: Agh, my eyes!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3518988818817026
+    m_Localized: The light is way too bright, I need to swap this bulb for something
+      softer.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3518988818817027
+    m_Localized: If I sit down right now, I'm definitely not getting back up until
+      morning.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3518988818817028
+    m_Localized: Seriously, a rotary phone? Does anyone even use these anymore?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3518988818817029
+    m_Localized: Ah, it's not even plugged into a jack...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3518988818817030
+    m_Localized: I really need to unpack these boxes and put my stuff away... Later.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3518988818817031
+    m_Localized: This is the bedroom door. Let's see what's going on with that shelf...
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
