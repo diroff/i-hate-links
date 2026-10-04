@@ -42,6 +42,34 @@ MonoBehaviour:
     m_Localized: Sofa
     m_Metadata:
       m_Items: []
+  - m_Id: 4698539887157248
+    m_Localized: Bookshelf
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4698539908128768
+    m_Localized: Boxes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4698539908128769
+    m_Localized: Bed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4698539908128770
+    m_Localized: Dresser
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4698539908128771
+    m_Localized: Nightstand
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4698539908128772
+    m_Localized: Grate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4698539908128773
+    m_Localized: Gap
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

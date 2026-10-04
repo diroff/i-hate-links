@@ -39,6 +39,34 @@ MonoBehaviour:
     m_Key: Interactables_Sofa
     m_Metadata:
       m_Items: []
+  - m_Id: 4698539887157248
+    m_Key: Interactables_Bookshelf
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4698539908128768
+    m_Key: Interactables_Boxes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4698539908128769
+    m_Key: Interactables_Bed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4698539908128770
+    m_Key: Interactables_Dresser
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4698539908128771
+    m_Key: Interactables_Small_Table
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4698539908128772
+    m_Key: Interactables_Grille
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4698539908128773
+    m_Key: Interactables_Gap
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

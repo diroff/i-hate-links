@@ -38,7 +38,7 @@ namespace Gameplay.Components.Interaction
             }
         }
 
-        public void Interact(GameObject interactor)
+        public virtual void Interact(GameObject interactor)
         {
             if (!CanInteract(interactor))
                 return;

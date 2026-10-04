@@ -50,8 +50,8 @@ namespace Services
             IsActive = false;
 
             var endedDialogue = _currentDialogue;
-            OnDialogueEndedWithSO?.Invoke(endedDialogue);
             OnDialogueEnded?.Invoke();
+            OnDialogueEndedWithSO?.Invoke(endedDialogue);
 
             _currentDialogue = null;
         }

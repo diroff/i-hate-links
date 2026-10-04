@@ -95,6 +95,82 @@ MonoBehaviour:
     m_Key: Lvl1_exit_0
     m_Metadata:
       m_Items: []
+  - m_Id: 4339408676315136
+    m_Key: Lvl2_start_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408705675264
+    m_Key: Lvl2_bookshelf_locked_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408705675265
+    m_Key: Lvl2_bookshelf_locked_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408705675266
+    m_Key: Lvl2_boxes_nothing_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408709869568
+    m_Key: Lvl2_bed_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408709869569
+    m_Key: Lvl2_bed_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408709869570
+    m_Key: Lvl2_bed_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408709869571
+    m_Key: Lvl2_small_table_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408709869572
+    m_Key: Lvl2_small_table_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408709869573
+    m_Key: Lvl2_table_locked_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408709869574
+    m_Key: Lvl2_table_locked_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408709869575
+    m_Key: Lvl2_table_unlocked_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408709869576
+    m_Key: Lvl2_table_unlocked_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408709869577
+    m_Key: Lvl2_grille_unavailable_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408709869578
+    m_Key: Lvl2_grille_unavailable_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408709869579
+    m_Key: Lvl2_grille_unavailable_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408709869580
+    m_Key: Lvl2_grille_qte_started_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408709869581
+    m_Key: Lvl2_grille_qte_finished_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408709869582
+    m_Key: Lvl2_boxes_jack_0
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

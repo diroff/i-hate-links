@@ -3,6 +3,7 @@ using Reflex.Attributes;
 using Services;
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Gameplay.Components
 {
@@ -12,6 +13,9 @@ namespace Gameplay.Components
 
         [SerializeField] private bool _isInteractable = true;
         [SerializeField] private bool _oneShot = false;
+
+        [Header("Events")]
+        [SerializeField] private UnityEvent _onDialogueEnded;
 
         [Inject] private DialogueService _dialogueService;
 
@@ -33,6 +37,18 @@ namespace Gameplay.Components
                 _isInteractable = value;
                 OnInteractableStateChanged?.Invoke(_isInteractable);
             }
+        }
+
+        private void OnEnable()
+        {
+            if (_dialogueService != null)
+                _dialogueService.OnDialogueEndedWithSO += HandleDialogueEnded;
+        }
+
+        private void OnDisable()
+        {
+            if (_dialogueService != null)
+                _dialogueService.OnDialogueEndedWithSO -= HandleDialogueEnded;
         }
 
         public void StartDialogue()
@@ -59,6 +75,12 @@ namespace Gameplay.Components
                 return false;
 
             return true;
+        }
+
+        private void HandleDialogueEnded(DialogueSO endedDialogue)
+        {
+            if (endedDialogue == _dialogue)
+                _onDialogueEnded?.Invoke();
         }
     }
 }

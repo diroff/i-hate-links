@@ -101,6 +101,90 @@ MonoBehaviour:
     m_Localized: This is the bedroom door. Let's see what's going on with that shelf...
     m_Metadata:
       m_Items: []
+  - m_Id: 4339408676315136
+    m_Localized: 'Well, here''s our prime suspect: the bookshelf. Need to check it
+      out.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408705675264
+    m_Localized: I can definitely feel a faint draft coming through.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408705675265
+    m_Localized: But it's completely stuck. It's as if it's nailed to the floor.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408705675266
+    m_Localized: I'll unpack my stuff eventually...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408709869568
+    m_Localized: I'm honestly amazed by the landlord's taste...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408709869569
+    m_Localized: Who in their right mind puts a bed this big right in the middle
+      of a doorway?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408709869570
+    m_Localized: Brilliant design. So convenient to climb over a bed every single
+      time.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408709869571
+    m_Localized: An hourglass, some cable scraps (wait, aren't these from a phone?)...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408709869572
+    m_Localized: A small key... Wait, what's it for? Looks like a key for a dresser,
+      it's way too small.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408709869573
+    m_Localized: This dresser has been locked since the day I moved in.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408709869574
+    m_Localized: I keep forgetting to call the landlady about the key.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408709869575
+    m_Localized: The key fits! Time to see what's been hiding in here all this time.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408709869576
+    m_Localized: A towel, some bedsheets, and... a book? "Obsolete Locks, Volume
+      14." Might come in handy.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408709869577
+    m_Localized: Well, that's just great. How am I supposed to open this grate? Saw
+      through it?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408709869578
+    m_Localized: Probably not. I could try using a lever, but out of what?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408709869579
+    m_Localized: Right, I used to have an old jack somewhere. Did I bring it with
+      me?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408709869580
+    m_Localized: It's a bit rusty. I'll really have to put my weight into it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408709869581
+    m_Localized: Phew, that wasn't easy. Let's see where this passage leads.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4339408709869582
+    m_Localized: 'Memory serves! Here it is. The real question is: does it still
+      work? Let''s find out.'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

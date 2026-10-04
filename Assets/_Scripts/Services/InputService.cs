@@ -14,6 +14,8 @@ namespace Services
         public InputAction JumpAction => _input.Player.Jump;
         public InputAction InteractAction => _input.Player.Interact;
 
+        public InputAction MiniGameInteractAction => _input.MiniGames.Interact;
+
         public InputSystem_Actions Actions => _input;
 
         public InputService()
@@ -36,19 +38,29 @@ namespace Services
         public void EnableGameplay()
         {
             _input.UI.Disable();
+            _input.MiniGames.Disable();
             _input.Player.Enable();
         }
 
         public void EnableUI()
         {
             _input.Player.Disable();
+            _input.MiniGames.Disable();
             _input.UI.Enable();
+        }
+
+        public void EnableMiniGames()
+        {
+            _input.Player.Disable();
+            _input.UI.Disable();
+            _input.MiniGames.Enable();
         }
 
         public void Disable()
         {
             _input.Player.Disable();
             _input.UI.Disable();
+            _input.MiniGames.Disable();
         }
 
         public string GetBindingsJson() => _input.SaveBindingOverridesAsJson();

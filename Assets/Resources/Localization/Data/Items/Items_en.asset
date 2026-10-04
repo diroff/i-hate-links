@@ -26,6 +26,14 @@ MonoBehaviour:
     m_Localized: Key
     m_Metadata:
       m_Items: []
+  - m_Id: 23655301010137088
+    m_Localized: Jack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23655780767211520
+    m_Localized: Book
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

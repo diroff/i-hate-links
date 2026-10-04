@@ -35,6 +35,11 @@ namespace Abstractions.Components.Inventory
             return true;
         }
 
+        public void Add(ItemDefinition item)
+        {
+            Add(item, 1);
+        }
+
         public bool Remove(ItemDefinition item, int amount = 1)
         {
             if (!CanRemove(item, amount))
