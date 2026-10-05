@@ -4,6 +4,7 @@ using Reflex.Attributes;
 using Services;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace Gameplay.UI
@@ -141,6 +142,9 @@ namespace Gameplay.UI
             _fadeTween?.Kill();
             _canvasGroup.blocksRaycasts = true;
             _canvasGroup.interactable = true;
+
+            FocusNextButton();
+
             _fadeTween = _canvasGroup.DOFade(1f, _fadeDuration);
         }
 
@@ -149,7 +153,20 @@ namespace Gameplay.UI
             _fadeTween?.Kill();
             _canvasGroup.blocksRaycasts = false;
             _canvasGroup.interactable = false;
+
+            if (EventSystem.current != null && EventSystem.current.currentSelectedGameObject == _nextButton.gameObject)
+                EventSystem.current.SetSelectedGameObject(null);
+
             _fadeTween = _canvasGroup.DOFade(0f, _fadeDuration);
+        }
+
+        private void FocusNextButton()
+        {
+            if (_nextButton == null || EventSystem.current == null)
+                return;
+
+            EventSystem.current.SetSelectedGameObject(null);
+            EventSystem.current.SetSelectedGameObject(_nextButton.gameObject);
         }
     }
 }

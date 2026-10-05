@@ -20,6 +20,7 @@ namespace Gameplay.Mechanics.Interactables
         [SerializeField] private GameObject _bookObject;
         [SerializeField] private Vector3 _insertedScaleMultiplier = new Vector3(1.3f, 1.3f, 1f);
         [SerializeField] private float _bookScaleDuration = 0.35f;
+        [SerializeField] private float _bookEndDelay = 0.25f;
         [SerializeField] private Ease _bookScaleEase = Ease.OutBack;
 
         [Header("On animation completed")]
@@ -61,6 +62,7 @@ namespace Gameplay.Mechanics.Interactables
                 .Append(_bookObject.transform
                     .DOScale(_originalBookScale, _bookScaleDuration)
                     .SetEase(_bookScaleEase))
+                .AppendInterval(_bookEndDelay)
                 .Append(_shelfTransform
                     .DOMove(_targetPosition, _moveDuration)
                     .SetEase(_moveEase));
