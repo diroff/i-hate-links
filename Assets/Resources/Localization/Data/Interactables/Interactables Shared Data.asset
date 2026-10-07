@@ -67,6 +67,10 @@ MonoBehaviour:
     m_Key: Interactables_Gap
     m_Metadata:
       m_Items: []
+  - m_Id: 6026650634657792
+    m_Key: Interactables_elevator
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -1,0 +1,1379 @@
+fileFormatVersion: 2
+guid: 7f606e0844d3efc47a85d02a10ce70ca
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4850242927254050959
+    second: Lvl3Decor_0
+  - first:
+      213: -7166883645995423162
+    second: Lvl3Decor_1
+  - first:
+      213: -3657521576025589672
+    second: Lvl3Decor_2
+  - first:
+      213: -6498625104390743883
+    second: Lvl3Decor_3
+  - first:
+      213: -7395401110286861462
+    second: Lvl3Decor_4
+  - first:
+      213: 6930937332467413446
+    second: Lvl3Decor_5
+  - first:
+      213: 2499006485796878016
+    second: Lvl3Decor_6
+  - first:
+      213: -1992936349490924574
+    second: Lvl3Decor_7
+  - first:
+      213: -3397145478635467413
+    second: Lvl3Decor_8
+  - first:
+      213: 7473366574462331714
+    second: Lvl3Decor_9
+  - first:
+      213: -1117217145152647204
+    second: Lvl3Decor_10
+  - first:
+      213: 1999598644280932947
+    second: Lvl3Decor_11
+  - first:
+      213: -1885103598576465356
+    second: Lvl3Decor_12
+  - first:
+      213: -164776734901485365
+    second: Lvl3Decor_13
+  - first:
+      213: 3091622977837736604
+    second: Lvl3Decor_14
+  - first:
+      213: 5391278065875681263
+    second: Lvl3Decor_15
+  - first:
+      213: -5574882109942178494
+    second: Lvl3Decor_16
+  - first:
+      213: 3192974601260372218
+    second: Lvl3Decor_17
+  - first:
+      213: 4347269413897869391
+    second: Lvl3Decor_18
+  - first:
+      213: 5093997452853959531
+    second: Lvl3Decor_19
+  - first:
+      213: -2755691557822752465
+    second: Lvl3Decor_20
+  - first:
+      213: -250838938224964053
+    second: Lvl3Decor_21
+  - first:
+      213: -3778842676724203185
+    second: Lvl3Decor_22
+  - first:
+      213: -216945303729853570
+    second: Lvl3Decor_23
+  - first:
+      213: -8331406224206003876
+    second: Lvl3Decor_24
+  - first:
+      213: -6737274370919946859
+    second: Lvl3Decor_25
+  - first:
+      213: -3537995508830097022
+    second: Lvl3Decor_26
+  - first:
+      213: -8180779511763031930
+    second: Lvl3Decor_27
+  - first:
+      213: 7651385918251490820
+    second: Lvl3Decor_28
+  - first:
+      213: -8509477003592323047
+    second: Lvl3Decor_29
+  - first:
+      213: -4800482247432412126
+    second: Lvl3Decor_30
+  - first:
+      213: 1661864105823024363
+    second: Lvl3Decor_31
+  - first:
+      213: 5627253317445646332
+    second: Lvl3Decor_32
+  - first:
+      213: 5180897436515683562
+    second: Lvl3Decor_33
+  - first:
+      213: 2974153949875221900
+    second: Lvl3Decor_34
+  - first:
+      213: -6941055361729868545
+    second: Lvl3Decor_35
+  - first:
+      213: -2584002470695504298
+    second: Lvl3Decor_36
+  - first:
+      213: -8457432343052614977
+    second: Lvl3Decor_37
+  - first:
+      213: -7103373585558750330
+    second: Lvl3Decor_38
+  - first:
+      213: -9121233425537014592
+    second: Lvl3Decor_39
+  - first:
+      213: 1583298940354390787
+    second: Lvl3Decor_40
+  - first:
+      213: -6280556264671674864
+    second: Lvl3Decor_41
+  - first:
+      213: -2261965080809054764
+    second: Lvl3Decor_42
+  - first:
+      213: -2580083957549057668
+    second: Lvl3Decor_43
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 25
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lvl3Decor_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 157
+        width: 58
+        height: 66
+      alignment: 9
+      pivot: {x: 0.08594558, y: 0.015711697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 177ebae51c970bcb0800000000000000
+      internalID: -4850242927254050959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_2
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 218
+        width: 12
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 858faa6418fdd3dc0800000000000000
+      internalID: -3657521576025589672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_3
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 204
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b89a5416ee30d5a0800000000000000
+      internalID: -6498625104390743883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 154
+        width: 52
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6b72d96fd14e5990800000000000000
+      internalID: -7395401110286861462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_5
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 154
+        width: 19
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c1b63e38c2af2060800000000000000
+      internalID: 6930937332467413446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_6
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 154
+        width: 19
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c6f15598214ea220800000000000000
+      internalID: 2499006485796878016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_7
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 182
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e331acf2faa754e0800000000000000
+      internalID: -1992936349490924574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_8
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 88
+        width: 73
+        height: 66
+      alignment: 9
+      pivot: {x: 0.15232728, y: 0.015485821}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6dcb9f9f2aead0d0800000000000000
+      internalID: -3397145478635467413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_9
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 129
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24bea1bcd4bb6b760800000000000000
+      internalID: 7473366574462331714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_10
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 132
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf433efce8de70f0800000000000000
+      internalID: -1117217145152647204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_11
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 136
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35ab7b56f5000cb10800000000000000
+      internalID: 1999598644280932947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_12
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 118
+        width: 100
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43a0a0ac344c6d5e0800000000000000
+      internalID: -1885103598576465356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_13
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 113
+        width: 38
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc0c2f0ce6896bdf0800000000000000
+      internalID: -164776734901485365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_14
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 120
+        width: 29
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c92247dd7b6a7ea20800000000000000
+      internalID: 3091622977837736604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_15
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 107
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fefffd136daa1da40800000000000000
+      internalID: 5391278065875681263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_16
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 103
+        width: 21
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24d573c024a02a2b0800000000000000
+      internalID: -5574882109942178494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_17
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 103
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af018f49b79bf4c20800000000000000
+      internalID: 3192974601260372218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_18
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 107
+        width: 21
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f489d46cf7a945c30800000000000000
+      internalID: 4347269413897869391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_19
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 96
+        width: 36
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6bda18b1b381b640800000000000000
+      internalID: 5093997452853959531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_20
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 97
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f299e61e021d1c9d0800000000000000
+      internalID: -2755691557822752465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_21
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 95
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2ec34f8057d48cf0800000000000000
+      internalID: -250838938224964053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_22
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 66
+        width: 92
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4184cf4b9ade8bc0800000000000000
+      internalID: -3778842676724203185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_23
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 96
+        width: 24
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7b2e7b45614dfcf0800000000000000
+      internalID: -216945303729853570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_24
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 97
+        width: 41
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5109b64e26e06c80800000000000000
+      internalID: -8331406224206003876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_25
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 57
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59529feb7a46082a0800000000000000
+      internalID: -6737274370919946859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_26
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 73
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 281314f64d386eec0800000000000000
+      internalID: -3537995508830097022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_27
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 76
+        width: 42
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 688229fa068087e80800000000000000
+      internalID: -8180779511763031930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_28
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 72
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40e5ec034fe2f2a60800000000000000
+      internalID: 7651385918251490820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_29
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 76
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 910368810c348e980800000000000000
+      internalID: -8509477003592323047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_30
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 80
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 224e83b74d2416db0800000000000000
+      internalID: -4800482247432412126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_31
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 64
+        width: 36
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be4bd8c6990201710800000000000000
+      internalID: 1661864105823024363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_32
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 64
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf77c77e315081e40800000000000000
+      internalID: 5627253317445646332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_33
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 54
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeccf39d4ce36e740800000000000000
+      internalID: 5180897436515683562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_34
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 61
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8533a97241564920800000000000000
+      internalID: 2974153949875221900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_35
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 54
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffc45cd7cea6caf90800000000000000
+      internalID: -6941055361729868545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_36
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 51
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 656767b8177c32cd0800000000000000
+      internalID: -2584002470695504298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_37
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 51
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb20378e71a21aa80800000000000000
+      internalID: -8457432343052614977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_38
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 14
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68bb0e5fb5fbb6d90800000000000000
+      internalID: -7103373585558750330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_39
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c4627d968eda6180800000000000000
+      internalID: -9121233425537014592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_40
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 15
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30b63116ff109f510800000000000000
+      internalID: 1583298940354390787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_41
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 3
+        width: 66
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01ef3646a5bf6d8a0800000000000000
+      internalID: -6280556264671674864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_42
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 8
+        width: 49
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ddd9005eb2eb90e0800000000000000
+      internalID: -2261965080809054764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_43
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 18
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c79ba9b7f43b13cd0800000000000000
+      internalID: -2580083957549057668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_1
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 51
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe34027024566fd46ac6507848bd4e21
+      internalID: -7166883645995423162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_44
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 127
+        width: 46
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e935be0ddf217d46987d09fb432a4ea
+      internalID: -1534831655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_45
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 184
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d500ace8e66e0154f9ac076d5f5db62a
+      internalID: -834831343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_46
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 210
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee1394fc2dfee1949ac628624091be27
+      internalID: -332613315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl3Decor_47
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 137
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d85694ea368ff3449c1fcc1714dd160
+      internalID: -655379945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 769e4fd87fb6a704aa958ecec696f98d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Lvl3Decor_0: -4850242927254050959
+      Lvl3Decor_1: -7166883645995423162
+      Lvl3Decor_10: -1117217145152647204
+      Lvl3Decor_11: 1999598644280932947
+      Lvl3Decor_12: -1885103598576465356
+      Lvl3Decor_13: -164776734901485365
+      Lvl3Decor_14: 3091622977837736604
+      Lvl3Decor_15: 5391278065875681263
+      Lvl3Decor_16: -5574882109942178494
+      Lvl3Decor_17: 3192974601260372218
+      Lvl3Decor_18: 4347269413897869391
+      Lvl3Decor_19: 5093997452853959531
+      Lvl3Decor_2: -3657521576025589672
+      Lvl3Decor_20: -2755691557822752465
+      Lvl3Decor_21: -250838938224964053
+      Lvl3Decor_22: -3778842676724203185
+      Lvl3Decor_23: -216945303729853570
+      Lvl3Decor_24: -8331406224206003876
+      Lvl3Decor_25: -6737274370919946859
+      Lvl3Decor_26: -3537995508830097022
+      Lvl3Decor_27: -8180779511763031930
+      Lvl3Decor_28: 7651385918251490820
+      Lvl3Decor_29: -8509477003592323047
+      Lvl3Decor_3: -6498625104390743883
+      Lvl3Decor_30: -4800482247432412126
+      Lvl3Decor_31: 1661864105823024363
+      Lvl3Decor_32: 5627253317445646332
+      Lvl3Decor_33: 5180897436515683562
+      Lvl3Decor_34: 2974153949875221900
+      Lvl3Decor_35: -6941055361729868545
+      Lvl3Decor_36: -2584002470695504298
+      Lvl3Decor_37: -8457432343052614977
+      Lvl3Decor_38: -7103373585558750330
+      Lvl3Decor_39: -9121233425537014592
+      Lvl3Decor_4: -7395401110286861462
+      Lvl3Decor_40: 1583298940354390787
+      Lvl3Decor_41: -6280556264671674864
+      Lvl3Decor_42: -2261965080809054764
+      Lvl3Decor_43: -2580083957549057668
+      Lvl3Decor_44: -1534831655
+      Lvl3Decor_45: -834831343
+      Lvl3Decor_46: -332613315
+      Lvl3Decor_47: -655379945
+      Lvl3Decor_5: 6930937332467413446
+      Lvl3Decor_6: 2499006485796878016
+      Lvl3Decor_7: -1992936349490924574
+      Lvl3Decor_8: -3397145478635467413
+      Lvl3Decor_9: 7473366574462331714
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
