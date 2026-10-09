@@ -171,6 +171,102 @@ MonoBehaviour:
     m_Key: Lvl2_boxes_jack_0
     m_Metadata:
       m_Items: []
+  - m_Id: 6409650551627776
+    m_Key: Lvl3_start_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793600
+    m_Key: Lvl3_start_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793601
+    m_Key: Lvl3_locker_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793602
+    m_Key: Lvl3_locker_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793603
+    m_Key: Lvl3_puddle_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793604
+    m_Key: Lvl3_puddle_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793605
+    m_Key: Lvl3_jack_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793606
+    m_Key: Lvl3_valve_socket_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793607
+    m_Key: Lvl3_valve_socket_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793608
+    m_Key: Lvl3_steam_stream_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793609
+    m_Key: Lvl3_crowbar_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793610
+    m_Key: Lvl3_flashlight_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793611
+    m_Key: Lvl3_valve_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793612
+    m_Key: Lvl3_valve_qte_started_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793613
+    m_Key: Lvl3_power_switch_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793614
+    m_Key: Lvl3_elevator_locked_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793615
+    m_Key: Lvl3_elevator_button_locked_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793616
+    m_Key: Lvl3_elevator_button_unlocked_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793617
+    m_Key: Lvl3_elevator_generator_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793618
+    m_Key: Lvl3_elevator_generator_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793619
+    m_Key: Lvl3_fuse_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793620
+    m_Key: Lvl3_trash_note_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793621
+    m_Key: Lvl3_trash_note_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793622
+    m_Key: Lvl3_trash_note_2
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

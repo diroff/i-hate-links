@@ -185,6 +185,112 @@ MonoBehaviour:
       work? Let''s find out.'
     m_Metadata:
       m_Items: []
+  - m_Id: 6409650551627776
+    m_Localized: Ugh, what a stench. Do the maintenance guys ever even come down
+      here?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793600
+    m_Localized: Well, that explains the weird smell in my apartment. I need to look
+      around.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793601
+    m_Localized: A locker. Locked, naturally.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793602
+    m_Localized: Luckily, it's just secured with a padlock. I might be able to force
+      it open
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793603
+    m_Localized: Hey, that bare wire is hanging right into the puddle. I need to
+      be careful.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793604
+    m_Localized: If I carefully step along the pallet, I shouldn't get shocked.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793605
+    m_Localized: Hey, that looks just like mine!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793606
+    m_Localized: Looks like I can shut off the flow from the pipe here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793607
+    m_Localized: Except the valve is missing.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793608
+    m_Localized: I don't think I should try squeezing under that. Better try shutting
+      off the pipe.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793609
+    m_Localized: A crowbar will definitely come in handy.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793610
+    m_Localized: A flashlight will come in handy if the power goes out.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793611
+    m_Localized: A nice rubberized valve. Looks like it's never even been used.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793612
+    m_Localized: The valve might be new, but the thread is rusted tight. This is
+      gonna take some effort.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793613
+    m_Localized: Looks like a power switch panel. I can turn off the electricity
+      here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793614
+    m_Localized: The elevator should be called with a button.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793615
+    m_Localized: The power is shut off, so the elevator won't work.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793616
+    m_Localized: Finally! Now, where does this elevator lead?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793617
+    m_Localized: Looks like an emergency generator. It should power the elevator,
+      but it's not working.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793618
+    m_Localized: Something's missing... some small part.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793619
+    m_Localized: If I'm not mistaken, this is a fuse. The size looks like a fit for
+      the generator slot.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793620
+    m_Localized: There's a note among the trash. Can't make it out, just chicken
+      scratch.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793621
+    m_Localized: Sau____es... B__r Bal____a... Disc____ 10%...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409650576793622
+    m_Localized: Total gibberish...
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -31,6 +31,22 @@ MonoBehaviour:
     m_Key: Item_Book
     m_Metadata:
       m_Items: []
+  - m_Id: 24962944819503104
+    m_Key: Item_Flashlight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24962944836280320
+    m_Key: Item_Crowbar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24962944836280321
+    m_Key: Item_Fuse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24962944836280322
+    m_Key: Item_Valve
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

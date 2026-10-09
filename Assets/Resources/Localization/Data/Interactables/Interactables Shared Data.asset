@@ -68,7 +68,59 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6026650634657792
-    m_Key: Interactables_elevator
+    m_Key: Interactables_Elevator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6765881514500096
+    m_Key: Interactables_Power_Switch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6765881531277312
+    m_Key: Interactables_Valve_Socket
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6765881531277313
+    m_Key: Interactables_Jack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6765881531277314
+    m_Key: Interactables_Puddle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6765881531277315
+    m_Key: Interactables_Locker
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6765881531277316
+    m_Key: Interactables_Crowbar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6765881531277317
+    m_Key: Interactables_Flashlight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6765881531277318
+    m_Key: Interactables_Trash_Note
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6765881531277319
+    m_Key: Interactables_Generator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6765881531277320
+    m_Key: Interactables_Button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6765881531277321
+    m_Key: Interactables_Valve
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6765881531277322
+    m_Key: Interactables_Fuse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7093521387593728
+    m_Key: Interactables_Steam
     m_Metadata:
       m_Items: []
   m_Metadata:

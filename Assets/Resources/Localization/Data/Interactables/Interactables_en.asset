@@ -74,6 +74,58 @@ MonoBehaviour:
     m_Localized: Elevator
     m_Metadata:
       m_Items: []
+  - m_Id: 6765881514500096
+    m_Localized: Power Switch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6765881531277312
+    m_Localized: Valve Socket
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6765881531277313
+    m_Localized: Jack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6765881531277314
+    m_Localized: Puddle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6765881531277315
+    m_Localized: Locker
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6765881531277316
+    m_Localized: Crowbar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6765881531277317
+    m_Localized: Flashlight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6765881531277318
+    m_Localized: Note from Trash
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6765881531277319
+    m_Localized: Emergency Generator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6765881531277320
+    m_Localized: Button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6765881531277321
+    m_Localized: Valve
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6765881531277322
+    m_Localized: Fuse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7093521387593728
+    m_Localized: Steam
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
